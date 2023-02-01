@@ -1,8 +1,5 @@
 .tittle{
-    margin: 0;
     margin-bottom: 80px;
-    width: 50%;
-
 }
 
 .tittle > .main-tittle{
@@ -11,7 +8,6 @@
     color: #222222;
     font-weight: 600;
     position: relative;
-    margin: 0;
 }
 
 .main-tittle::after{
