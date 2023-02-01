@@ -15,5 +15,18 @@ body {
         sans-serif;
 }
 
+p {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #333;
+}
+p > a {
+    color: red;
+    text-decoration: none;
+}
+p > a:hover {
+    text-decoration: none;
+}
+
 /* base css start #28 */
 /* base css end */
