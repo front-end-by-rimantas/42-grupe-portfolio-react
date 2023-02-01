@@ -72,7 +72,7 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
-Mindaugas S (https://github.com/mstepno)
+Mindaugas_S (https://github.com/mstepno)
 
 Rimantas: [Github](https://github.com/belauzas)
 
