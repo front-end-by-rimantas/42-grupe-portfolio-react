@@ -28,6 +28,6 @@ p > a {
     color: red;
     text-decoration: none;
 }
-p > a:hover {
+a:hover {
     text-decoration: none;
 }
