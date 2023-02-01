@@ -19,10 +19,10 @@ body {
 p {
     font-size: 16px;
     line-height: 1.2em;
-    color: #333;
+    color: #222222;
 }
 p > a {
-    color: red;
+    color: #222222;
     text-decoration: none;
 }
 a:hover {
