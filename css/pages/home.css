@@ -1,9 +1,13 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+
 /* 3rd-party */
 /* components */
+
 @import '../components/tittle.css'
+@import '../components/button.css';
+
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
