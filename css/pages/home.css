@@ -5,6 +5,7 @@
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
 /* components */
+@import '../components/tittle.css';
 @import '../components/icon-box.css';
 @import '../components/text-link.css';
 @import '../components/button.css';
