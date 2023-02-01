@@ -4,7 +4,7 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# Omex
+# React
 
 _website design project_
 
@@ -14,9 +14,9 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/40-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io//42-grupe-portfolio-react/
 
-Design: [Omex-3](https://finestwp.co/demos/wp/omex/landing-03/), [Omex-5](https://finestwp.co/demos/wp/omex/landing-05/)
+Design: [React](https://react.theme-land.com/theme-five)
 
 ## 🎯 Project features/goals
 
@@ -51,7 +51,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/front-end-by-rimantas/40-grupe-portfolio.git
+    git clone https://github.com/front-end-by-rimantas/42-grupe-portfolio-react.git
     ```
 2. Install NPM packages
     ```sh
@@ -72,7 +72,11 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Deividas: [Github](https://github.com/xzcjdvd)
+Inga: [Github](https://github.com/inga911)
+Mindaugas: [Github](https://github.com/mstepno)
+Sarunas: [Github](https://github.com/Arshunas)
+Vitalijus: [Github](https://github.com/vitgri1)
 
 ## ⚠️ License
 
