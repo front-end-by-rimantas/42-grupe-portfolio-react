@@ -1,9 +1,10 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
-@import '../components/button.css';
+
 /* 3rd-party */
 /* components */
+@import '../components/button.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
