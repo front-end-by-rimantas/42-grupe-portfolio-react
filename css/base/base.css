@@ -19,16 +19,12 @@ body {
 p {
     font-size: 16px;
     line-height: 1.2em;
-    color: #222222;
+    color: #565656;
 }
-p > a {
-    color: #222222;
-    text-decoration: none;
+a {
+    color: #444444;
 }
 a:hover {
     text-decoration: none;
 }
 /* base css end */
-
-
-
