@@ -4,6 +4,16 @@
     gap: 1em;
 }
 
+.form > h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.form > p {
+    text-align: center;
+}
+
 .form > input,
 .form > textarea {
     font-family: inherit;
@@ -12,7 +22,9 @@
     color: #565656;
     line-height: 2em;
     border: none;
-    width: 100%
+    width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: inherit;
 }
 
 .form > textarea {
@@ -21,11 +33,18 @@
     resize: vertical;
 }
 
-.form.mail {
-    justify-content: center;
-}
-
 .form .btn {
     background: none;
     background-color: #7c4fe0;
+    color: #fff;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.form.mail {
+    text-align: center;
+}
+
+.form.mail .btn {
+    margin-top: 0;
 }
