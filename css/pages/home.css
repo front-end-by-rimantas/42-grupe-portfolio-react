@@ -3,7 +3,7 @@
 @import '../base/layout.css';
 /* 3rd-party */
 /* components */
-
+@import '../components/text-link.css';
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
