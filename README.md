@@ -72,11 +72,11 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
--Deividas: [Github](https://github.com/xzcjdvd)
--Inga: [Github](https://github.com/inga911)
--Mindaugas: [Github](https://github.com/mstepno)
--Sarunas: [Github](https://github.com/Arshunas)
--Vitalijus: [Github](https://github.com/vitgri1)
+- Deividas: [Github](https://github.com/xzcjdvd)
+- Inga: [Github](https://github.com/inga911)
+- Mindaugas: [Github](https://github.com/mstepno)
+- Sarunas: [Github](https://github.com/Arshunas)
+- Vitalijus: [Github](https://github.com/vitgri1)
 
 ## ⚠️ License
 
