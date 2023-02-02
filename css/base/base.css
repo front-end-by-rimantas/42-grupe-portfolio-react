@@ -11,6 +11,8 @@ body * {
 }
 
 body {
+    display: inline-block;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,5 +28,30 @@ a {
 }
 a:hover {
     color: #7c4fe0;
+}
+
+.main-tittle{
+    /*color: #fff;*/
+    font-size: clamp(28px, 6vw, 56px);
+    margin-bottom: 0.4em;
+}
+
+.section-tittle{
+    font-size: clamp(24px, 5vw, 40px);
+}
+
+.form-tittle{
+    font-size: clamp(25.2px, 28px);
+    margin-bottom: 0.5em;
+}
+
+.box-tittle{
+    font-size: clamp(18px, 20px);
+    margin-bottom: 0.28em;
+}
+
+.faq-tittle{
+    font-size: 16px;
+    margin-bottom: 1em;
 }
 /* base css end */
