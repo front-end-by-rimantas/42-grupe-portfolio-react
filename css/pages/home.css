@@ -1,7 +1,7 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
-
+@import '../base/main.css';
 /* 3rd-party */
 /* components */
 @import '../components/text-link.css';
