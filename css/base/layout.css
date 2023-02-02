@@ -41,7 +41,6 @@
     padding: 15px 0;
     float: left;
 }
-
 .container > .row > [class*='col-'] {
     float: left;
     background-color: aqua; /* delete at the end */
@@ -126,7 +125,6 @@
         width: 540px;
         margin-left: calc(50% - 270px);
     }
-
     .container > .row > .col-sm-1 {
         width: var(--c1);
     }
