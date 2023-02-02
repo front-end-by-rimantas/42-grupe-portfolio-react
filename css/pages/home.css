@@ -1,13 +1,69 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+
 /* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
 /* components */
+@import '../components/form.css';
+@import '../components/tittle.css';
+@import '../components/icon-box.css';
+@import '../components/text-link.css';
+@import '../components/button.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
 /* header: end */
 
-/* footer: start */
-/* footer: end */
+/* Hero: start */
+/* Hero: end */
+
+/* Express Functionality: start */
+/* Express Functionality: end */
+
+/* Clients section: start */
+/* Clients section: end */
+
+/* Device section: start */
+/* Device section: end */
+
+/* How sApp works?: start */
+/* How sApp works?: end */
+
+/* Simple & Beautiful Interface - section: start */
+/* Simple & Beautiful Interface - section: end */
+
+/* Unlock Full Power Of sApp - section: start */
+/* Unlock Full Power Of sApp - section: end */
+
+/* FAQ: start */
+/* FAQ: end */
+
+/* Our Team Experts section: start */
+/* Our Team Experts section: end */
+
+/* sApp is available for all devices - section: start */
+/* sApp is available for all devices - section: end */
+
+/* Subscribe to get updates - section: start */
+/* Subscribe to get updates - section: end */
+
+/* Stay Tuned section: start */
+/* Stay Tuned section: end */
+
+/* footer: start  */
+/* footer: end  */
+
+/* Back to top: start  */
+.bctt {
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    position: fixed;
+    line-height: 2em;
+    padding: 0 0.5em;
+    background-color: rgba(35,35,35,0.65);
+    color: #fff;
+}
+/* Back to top: end  */
