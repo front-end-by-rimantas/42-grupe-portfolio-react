@@ -59,7 +59,6 @@
 .container > .row {
     width: var(--width);
     margin: 0 calc((100% - var(--width)) / 2);
-    width: 100%;
     padding: 15px 0;
     float: left;
 }
