@@ -11,9 +11,20 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* base css start #28 */
+p {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #565656;
+}
+a {
+    color: #444444;
+    text-decoration: none;
+}
+a:hover {
+    color: #7c4fe0;
+}
 /* base css end */
