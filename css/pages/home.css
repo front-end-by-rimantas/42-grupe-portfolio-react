@@ -17,6 +17,11 @@
 /* header: end */
 
 /* Hero: start */
+.hero  .form {
+    align-items: center;
+    padding: 3em;
+    background-color: red; /*delete*/
+}
 /* Hero: end */
 
 /* Express Functionality: start */
