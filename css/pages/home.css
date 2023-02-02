@@ -66,4 +66,8 @@
     background-color: rgba(35,35,35,0.65);
     color: #fff;
 }
+
+.bctt:hover {
+    color:#fff;
+}
 /* Back to top: end  */
