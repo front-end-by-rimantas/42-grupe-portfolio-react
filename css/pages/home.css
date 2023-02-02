@@ -17,10 +17,42 @@
 /* header: end */
 
 /* Hero: start */
+.trail-btn { 
+    padding: 0.8em  1.8em;
+    text-align: center;
+    user-select: none;
+    
+    background-color: #fff;
+    border-radius: 2.4em;
+    color: #444;
+    font-size: 15px;
+    line-height: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.trail-btn:hover {
+    color: #fff;
+    background: linear-gradient(-50deg,#8731E8 0%, #4528DC 100%);
+}
+
+@media (min-width: 576px)  {
+    .trail-btn {
+        padding: 1.2em  2em;
+    }
+}
+
 .hero  .form {
     align-items: center;
     padding: 3em;
     background-color: red; /*delete*/
+}
+
+.hero svg {
+    transform: rotate(180deg);
 }
 /* Hero: end */
 
