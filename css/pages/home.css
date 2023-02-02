@@ -21,17 +21,16 @@
     padding: 0.8em  1.8em;
     text-align: center;
     user-select: none;
-    
     background-color: #fff;
     border-radius: 2.4em;
     color: #444;
     font-size: 15px;
     line-height: 1em;
-    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 1px;
     font-weight: bold;
+    margin: 20px 0;
 }
 
 .trail-btn:hover {
@@ -48,11 +47,26 @@
 .hero  .form {
     align-items: center;
     padding: 3em;
-    background-color: red; /*delete*/
+    box-shadow: 0 1em 3em rgba(0,0,0,.2);
+}
+
+.hero.container-fluid {
+    position: relative;
+    background-color: #fff;
+    height: 30px;
 }
 
 .hero svg {
     transform: rotate(180deg);
+    position: absolute;
+    bottom: 30px;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .hero.container-fluid {
+        margin-top: 100px;
+    }
 }
 /* Hero: end */
 
