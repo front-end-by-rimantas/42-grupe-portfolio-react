@@ -20,6 +20,47 @@
 /* Hero: end */
 
 /* Express Functionality: start */
+.premium {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+}
+
+.premium > span {
+    color: #7c4fe0;
+}
+
+/* I tittle komponenta? tittle start*/
+.tittle.tittle-left *{
+    text-align: left;
+}
+
+.tittle.tittle-left > .section-tittle::after{
+    left: 0;
+    transform: none;
+}
+/* tittle end */
+.express-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+    margin: 15px !important;
+}
+
+.express-box > .box-img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+    user-select: none;
+}
+
 /* Express Functionality: end */
 
 /* Clients section: start */
