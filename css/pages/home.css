@@ -44,7 +44,8 @@
 .team {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: center;
 }
 
@@ -54,7 +55,7 @@
 
 @media (min-width: 136px) {
     .team-img {
-        width: 95%;
+        width: 80%;
         border-radius: 6em;
     }
 }
@@ -66,9 +67,9 @@
     }
 }
 
-@media (min-width: 990px){
+@media (min-width: 992px){
     .team-img {
-        border-radius: 10em;
+        border-radius: 5em;
     }
 }
 
