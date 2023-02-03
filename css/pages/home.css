@@ -14,6 +14,21 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
+.logo {
+    float: left;
+}
+.nav-bar {
+    float: right;
+}
+.nav-bar > a {
+    display: inline-block;
+    margin: 16.5px;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.nav-bar > a:first-child{
+    margin-left: 0;
+}
 /* header: end */
 
 /* Hero: start */
