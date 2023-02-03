@@ -73,6 +73,73 @@
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
+/* placeholder start */
+.carousel-placeholder {
+    height: 480px;
+    background-color: red;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width:576px) {
+    .carousel-placeholder {
+        height: 300px;
+    }
+}
+
+@media (min-width:768px) {
+    .carousel-placeholder {
+        height: 400px;
+    }
+}
+
+@media (min-width:992px) {
+    .carousel-placeholder {
+        height: 550px;
+    }
+}
+
+@media (min-width:1200px) {
+    .carousel-placeholder {
+        height: 500px;
+    }
+}
+/* placeholder end */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+}
+
+.testimonial > img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.testimonial > .tst-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 16px;
+    color: #222;
+}
+
+.tst-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tst-rating {
+    color: #ffa200;
+    letter-spacing: 3px;
+}
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
