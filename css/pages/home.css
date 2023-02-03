@@ -245,6 +245,26 @@
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
+.stay-tuned-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em !important;
+}
+
+.stay-tuned-left > a {
+    display: flex;
+    align-items: center;
+}
+
+.stay-tuned-left > a > .icon-box{
+    color: #fff;
+    background-color: #7c4fe0;
+}
+
+.form > .btn > .fa {
+    margin-right: 1.5em;
+}
 /* Stay Tuned section: end */
 
 /* footer: start  */
