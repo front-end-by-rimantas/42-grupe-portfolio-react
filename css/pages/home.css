@@ -67,6 +67,10 @@
 /* Clients section: end */
 
 /* Device section: start */
+    .pomidoras{
+    display: flex;
+    margin-bottom: 100px;
+    }
 /* Device section: end */
 
 /* How sApp works?: start */
