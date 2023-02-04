@@ -23,6 +23,35 @@
 /* Express Functionality: end */
 
 /* Clients section: start */
+
+.phone-image {
+    float: left;
+    width: 540px;
+    height: 568.08px;
+}
+
+.text-container {
+    float: left;
+    width: calc(100% - 540px);
+    padding: 40px;
+}
+
+@media (max-width: 767px) {
+    .phone-image {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+    
+    .text-container {
+        float: none;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+}
 /* Clients section: end */
 
 /* Device section: start */
