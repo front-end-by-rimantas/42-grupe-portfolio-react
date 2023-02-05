@@ -32,6 +32,13 @@
 /* header: end */
 
 /* Hero: start */
+.tittle-form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
