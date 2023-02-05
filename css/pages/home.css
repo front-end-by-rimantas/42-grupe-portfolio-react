@@ -29,9 +29,41 @@
 .nav-bar > a:first-child{
     margin-left: 0;
 }
+/* delete after container fix? start */
+header.container {
+    background: transparent;
+}
+/*del cont fix end */
 /* header: end */
 
 /* Hero: start */
+.fixed-bg {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+.fixed-bg > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fixed-bg > div {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    background: linear-gradient(-50deg,#8631e8 0%, #4628dc 100%);
+    opacity: 0.9;
+}
+/* delete after container fix? start */
+.container.hero {
+    background: transparent;
+}
+/*del cont fix end */
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
@@ -74,7 +106,7 @@
 .hero svg {
     transform: rotate(180deg);
     position: absolute;
-    bottom: 30px;
+    bottom: 29px;
     z-index: -1;
 }
 
