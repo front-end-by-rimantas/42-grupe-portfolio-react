@@ -41,43 +41,43 @@
 /* FAQ: end */
 
 /* Our Team Experts section: start */
-.team {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-
-.team-img {
-    margin: 15px;
-}
-
 @media (min-width: 136px) {
     .team-img {
-        width: 80%;
         border-radius: 6em;
     }
 }
 
-@media (min-width: 580px){
+@media (min-width: 576px){
     .team-img {
-        width: 200px;
-        border-radius: 8em; 
+        border-radius: 5.5em; 
+    }
+}
+
+@media (min-width: 768px){
+    .team-img {
+        border-radius: 10em;
     }
 }
 
 @media (min-width: 992px){
     .team-img {
-        border-radius: 5em;
+        border-radius: 10em;
     }
 }
 
 @media (min-width: 1200px){
     .team-img {
-        width: 200px;
         border-radius: 5em;
     }
+}
+
+@media (min-width: 1400px){
+    .team-img {
+        border-radius: 5em;
+    }
+}
+.teams > .team-img{
+    margin-bottom: 15px;
 }
 /* Our Team Experts section: end */
 
