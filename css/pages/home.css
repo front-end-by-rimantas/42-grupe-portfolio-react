@@ -67,15 +67,26 @@
 /* Clients section: end */
 
 /* Device section: start */
-.row > .pomidoras{
+.antraste{
+    display: flex;
+    flex-direction: column;
+}
+.kaire{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    }
+.pomidoras{
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 10px;
-    }
-
-.row > .agurkas{
+}
+.desine{
     display: flex;
     justify-content: center;
+}
+.desine > img{
+    object-fit: contain;
     }
 /* Device section: end */
 
