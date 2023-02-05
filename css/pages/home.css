@@ -118,6 +118,7 @@
     border-radius: 1em;
     box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
     margin: 15px !important;
+    transition: linear 0.15s;
 }
 
 .express-box > .box-img {
@@ -127,6 +128,10 @@
     user-select: none;
 }
 
+.express-box:hover {
+    box-shadow: 0 0.5em 0.5em rgba(0,0,0,.175);
+    transform: translateY(-5%);
+}
 /* Express Functionality: end */
 
 /* Clients section: start */
