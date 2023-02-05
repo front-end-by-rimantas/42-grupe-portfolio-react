@@ -67,9 +67,15 @@
 /* Clients section: end */
 
 /* Device section: start */
-    .pomidoras{
+.row > .pomidoras{
     display: flex;
-    margin-bottom: 100px;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+    }
+
+.row > .agurkas{
+    display: flex;
+    justify-content: center;
     }
 /* Device section: end */
 
