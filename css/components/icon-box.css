@@ -13,3 +13,50 @@
     border-radius: 5%;
     align-items: center;
     }
+
+/* new component maybe? socials: start */
+.socials > .icon-box {
+    font-size: 16px;
+    line-height: 2.5em;
+    padding: 0;
+    height: 2.5em;
+    width: 2.5em;
+    color: #fff;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.socials > .icon-box > div:first-child {
+    transform: translateY(50%);
+    transition: linear 0.15s;
+}
+
+.socials > .icon-box > div:last-child{
+    transform: translateY(175%);
+    transition: linear 0.15s;
+}
+
+.socials > .icon-box:hover > div:first-child{
+    transform: translateY(-175%);
+}
+
+.socials > .icon-box:hover > div:last-child{
+    transform: translateY(-50%);
+}
+
+.socials > .facebook {
+    background-color: #3b5999;
+}
+
+.socials > .twitter {
+    background-color: #55acee;
+}
+
+.socials > .google-plus {
+    background-color: #dd4b39;
+}
+
+.socials > .vine {
+    background-color: #00b489;
+}
+/* socials: end */
