@@ -148,8 +148,9 @@ header.container {
     text-align: center;
     padding: 3em;
     border-radius: 1em;
-    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+    box-shadow:  0.5em 0.5em 2.5em 0.3em rgba(0,0,0,.075);
     margin: 15px !important;
+    transition: linear 0.15s;
 }
 
 .express-box > .box-img {
@@ -159,6 +160,11 @@ header.container {
     user-select: none;
 }
 
+.express-box:hover {
+    box-shadow: 0.5em 0.5em 2.5em 0.3em rgba(0,0,0,.175);
+
+    transform: translateY(-5%);
+}
 /* Express Functionality: end */
 
 /* Clients section: start */
