@@ -187,6 +187,10 @@ header.container {
 .icon-holder {
     display: flex;
 }
+
+.client-img:last-child {
+    margin-top: 40px;
+}
 /* Clients section: end */
 
 /* Device section: start */
