@@ -14,11 +14,21 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
+header .row {
+    padding: 0 !important;
+}
+.header-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo {
     float: left;
 }
-.nav-bar {
-    float: right;
+.header-col .fa-bars {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1em;
 }
 .nav-bar > a {
     display: inline-block;
