@@ -136,6 +136,58 @@
 /* Device section: end */
 
 /* How sApp works?: start */
+.app-container {
+    background: linear-gradient(-50deg,#8731E8 0%, #5236dc 80%);
+    text-align: center;
+}
+
+.app-container .section-tittle {
+    color: #fff;
+}
+
+.app-container p, .box-tittle, .tittle > h2 {
+    color:#fff;
+    line-height: 1.5em;
+}
+
+.app-container .row {
+    margin-bottom: 5%;
+}
+
+.app-container .tittle{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.app-img {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.info {
+    padding: 30px;
+}
+
+.section-tittle::after {
+    display: none;
+}
+
+@media (min-width: 576px){
+    .box-tittle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px){
+    .box-tittle {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px){
+    .box-tittle {
+        font-size: 22px;
+    }
+}
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
