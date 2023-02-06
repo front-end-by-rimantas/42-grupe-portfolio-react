@@ -67,21 +67,23 @@
 /* Clients section: end */
 
 /* Device section: start */
-.antraste{
-    display: flex;
-    flex-direction: column;
-}
 .kaire{
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
     }
+
+.antraste{
+    display: flex;
+    flex-direction: column;
+}
+
 .pomidoras{
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 10px;
 }
-.desine{
+.container > .row > .desine{
     display: flex;
     justify-content: center;
 }
