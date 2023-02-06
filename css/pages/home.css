@@ -29,6 +29,10 @@ header .row {
     color: #fff;
     font-size: 35px;
     line-height: 1em;
+    padding: 0.25em;
+    background: none;
+    border: none;
+    font-weight: 100;
 }
 .nav-bar > a {
     display: inline-block;
