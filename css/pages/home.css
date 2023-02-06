@@ -14,12 +14,119 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
+.logo {
+    float: left;
+}
+.nav-bar {
+    float: right;
+}
+.nav-bar > a {
+    display: inline-block;
+    margin: 16.5px;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.nav-bar > a:first-child{
+    margin-left: 0;
+}
 /* header: end */
 
 /* Hero: start */
+.trail-btn { 
+    padding: 0.8em  1.8em;
+    text-align: center;
+    user-select: none;
+    background-color: #fff;
+    border-radius: 2.4em;
+    color: #444;
+    font-size: 15px;
+    line-height: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.trail-btn:hover {
+    color: #fff;
+    background: linear-gradient(-50deg,#8731E8 0%, #4528DC 100%);
+}
+
+@media (min-width: 576px)  {
+    .trail-btn {
+        padding: 1.2em  2em;
+    }
+}
+
+.hero  .form {
+    align-items: center;
+    padding: 3em;
+    box-shadow: 0 1em 3em rgba(0,0,0,.2);
+}
+
+.hero.container-fluid {
+    position: relative;
+    background-color: #fff;
+    height: 30px;
+}
+
+.hero svg {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 30px;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .hero.container-fluid {
+        margin-top: 100px;
+    }
+}
 /* Hero: end */
 
 /* Express Functionality: start */
+.premium {
+    font-size: 14px;
+    padding: 0.5em 2em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+}
+
+.premium > span {
+    color: #7c4fe0;
+}
+
+/* I tittle komponenta? tittle start*/
+.tittle.tittle-left *{
+    text-align: left;
+}
+
+.tittle.tittle-left > .section-tittle::after{
+    left: 0;
+    transform: none;
+}
+/* tittle end */
+.express-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+    margin: 15px !important;
+}
+
+.express-box > .box-img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+    user-select: none;
+}
+
 /* Express Functionality: end */
 
 /* Clients section: start */
@@ -32,15 +139,192 @@
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
+/* placeholder start */
+.carousel-placeholder {
+    height: 480px;
+    background-color: red;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width:576px) {
+    .carousel-placeholder {
+        height: 300px;
+    }
+}
+
+@media (min-width:768px) {
+    .carousel-placeholder {
+        height: 400px;
+    }
+}
+
+@media (min-width:992px) {
+    .carousel-placeholder {
+        height: 550px;
+    }
+}
+
+@media (min-width:1200px) {
+    .carousel-placeholder {
+        height: 500px;
+    }
+}
+/* placeholder end */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+}
+
+.testimonial > img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.testimonial > .tst-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 16px;
+    color: #222;
+}
+
+.tst-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tst-rating {
+    color: #ffa200;
+    letter-spacing: 3px;
+}
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
+.bg-gray {
+    background-color: #f6f9fe;
+}
+
+.row.plans {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5em;
+}
+
+.plan-box,
+.plan-box .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.plan-box {
+    padding: 3em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.price-img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.price-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.price-value {
+    font-size: 56px;
+    line-height: 1em;
+}
+
+.price-value > .currency{
+    font-size: 30px;
+    line-height: 1.3em;
+    vertical-align: bottom;
+}
+
+.plan-features {
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    line-height: 1em;
+}
+
+.plan-features > li {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1.5em 0;
+}
+
+.plan-features > li:first-child {
+    border-top: 1px solid #dee2e6;
+}
+
+.btn.btn-out {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
 /* Unlock Full Power Of sApp - section: end */
 
 /* FAQ: start */
 /* FAQ: end */
 
 /* Our Team Experts section: start */
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.team-img {
+    margin: 15px;
+}
+
+@media (min-width: 136px) {
+    .team-img {
+        width: 80%;
+        border-radius: 6em;
+    }
+}
+
+@media (min-width: 580px){
+    .team-img {
+        width: 200px;
+        border-radius: 8em; 
+    }
+}
+
+@media (min-width: 992px){
+    .team-img {
+        border-radius: 5em;
+    }
+}
+
+@media (min-width: 1200px){
+    .team-img {
+        width: 200px;
+        border-radius: 5em;
+    }
+}
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
@@ -50,9 +334,74 @@
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
+.stay-tuned-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em !important;
+}
+
+.stay-tuned-left > a {
+    display: flex;
+    align-items: center;
+}
+
+.stay-tuned-left > a > .icon-box{
+    color: #fff;
+    background-color: #7c4fe0;
+}
+
+.form > .btn > .fa {
+    margin-right: 1.5em;
+}
 /* Stay Tuned section: end */
 
 /* footer: start  */
+footer.container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+footer.container > .row > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    object-fit: contain;
+    object-position: left;
+}
+
+footer .socials {
+    display: flex;
+}
+
+footer.container  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.dwl-apps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.dwl-apps > .app-btn {
+    width: 160px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.dwl-apps > .app-btn > img {
+    width: 100%;
+    float: left;
+}
 /* footer: end  */
 
 /* Back to top: start  */
@@ -65,5 +414,9 @@
     padding: 0 0.5em;
     background-color: rgba(35,35,35,0.65);
     color: #fff;
+}
+
+.bctt:hover {
+    color:#fff;
 }
 /* Back to top: end  */
