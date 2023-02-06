@@ -26,15 +26,11 @@
 
 .phone-image {
     float: left;
-    width: 540px;
-    height: 568.08px;
+    width: 100%;
+   
 }
 
-.text-container {
-    float: left;
-    width: calc(100% - 540px);
-    padding: 40px;
-}
+
 
 @media (max-width: 767px) {
     .phone-image {
