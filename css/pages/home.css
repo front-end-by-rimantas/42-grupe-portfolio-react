@@ -23,30 +23,30 @@
 /* Express Functionality: end */
 
 /* Clients section: start */
-
-.phone-image {
+.client-img,
+.client-img >img {
     float: left;
-    width: 100%;
-   
+    width: 100%;  
 }
 
+.client-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
+.client-title {
+    font-size:40px;
+}
 
-@media (max-width: 767px) {
-    .phone-image {
-        float: none;
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        height: auto;
-    }
-    
-    .text-container {
-        float: none;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
+.icon-row::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #764fe0;
+}
+
+.icon-holder {
+    display: flex;
 }
 /* Clients section: end */
 
