@@ -29,6 +29,11 @@
 .nav-bar > a:first-child{
     margin-left: 0;
 }
+/* delete after container fix? start */
+header.container {
+    background: transparent;
+}
+/*del cont fix end */
 /* header: end */
 
 /* Hero: start */
@@ -39,6 +44,33 @@
     row-gap: 15px;
 }
 
+.fixed-bg {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+.fixed-bg > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fixed-bg > div {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    background: linear-gradient(-50deg,#8631e8 0%, #4628dc 100%);
+    opacity: 0.9;
+}
+/* delete after container fix? start */
+.container.hero {
+    background: transparent;
+}
+/*del cont fix end */
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
@@ -81,7 +113,7 @@
 .hero svg {
     transform: rotate(180deg);
     position: absolute;
-    bottom: 30px;
+    bottom: 29px;
     z-index: -1;
 }
 
@@ -143,6 +175,58 @@
 /* Device section: end */
 
 /* How sApp works?: start */
+.app-container {
+    background: linear-gradient(-50deg,#8731E8 0%, #5236dc 80%);
+    text-align: center;
+}
+
+.app-container .section-tittle {
+    color: #fff;
+}
+
+.app-container p, .box-tittle, .tittle > h2 {
+    color:#fff;
+    line-height: 1.5em;
+}
+
+.app-container .row {
+    margin-bottom: 5%;
+}
+
+.app-container .tittle{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.app-img {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.info {
+    padding: 30px;
+}
+
+.section-tittle::after {
+    display: none;
+}
+
+@media (min-width: 576px){
+    .box-tittle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px){
+    .box-tittle {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px){
+    .box-tittle {
+        font-size: 22px;
+    }
+}
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
