@@ -77,6 +77,13 @@
     display: flex;
     flex-direction: column;
 }
+.kaire > .antraste > h2{
+    color: #222222;
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
 
 .pomidoras{
     display: flex;
