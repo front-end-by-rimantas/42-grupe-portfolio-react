@@ -1,5 +1,5 @@
 // IMPORT
-
+import { backToTopScroll } from '../components/backToTopScroll.js';
 // EXECUTION
 
 /* header: start */
@@ -45,4 +45,17 @@
 /* footer: end  */
 
 /* Back to top: start  */
+const scrolling = () => {
+    let lastKnownScrollPosition = scrollY || 0;
+    let ticking = false;
+
+    if (!ticking) {
+        requestAnimationFrame(() => {
+            backToTopScroll(lastKnownScrollPosition);
+            ticking = false;
+        });
+        ticking = true;
+    }
+};
+addEventListener('scroll', scrolling);
 /* Back to top: end  */
