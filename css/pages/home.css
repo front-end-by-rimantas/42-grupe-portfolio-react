@@ -498,8 +498,11 @@ header.container {
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
-.sApp-img {
-    margin: 5px;
+.sApp{
+    text-align: center;
+}
+.sApp > .sApp-img {
+    display: inline-block;
 }
 
 @media (min-width: 136px) {
