@@ -277,6 +277,14 @@ header.container {
     margin-top: 40px;
 }
 
+.app-container .info::after{
+    content: '>';
+    position: absolute;
+    font-weight: 500;
+    font-size: 60px;
+    bottom: -285%;
+}
+
 .app-img {
     width: 65px;
     margin-bottom: 10px;
@@ -306,6 +314,8 @@ header.container {
         font-size: 22px;
     }
 }
+
+
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
