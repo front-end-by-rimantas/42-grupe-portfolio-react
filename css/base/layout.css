@@ -537,9 +537,6 @@
 }
 
 @media (min-width: 1400px) {
-    :root {
-        --width: 1320px;
-    }
 
     .hidden-xxl {
         display: none !important;
