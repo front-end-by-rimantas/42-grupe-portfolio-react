@@ -507,21 +507,22 @@ header.container {
 
 @media (min-width: 136px) {
     .sApp-img {
-        width: 50%;
-        border-radius: 3em;
+        width: 40%;
+        border-radius: 2em;
     }
 }
 
 @media (min-width: 580px){
     .sApp-img {
-        width: 100px;
-        border-radius: 4em; 
+        width: 35%;
+        border-radius: 2em; 
     }
 }
 
 @media (min-width: 992px){
     .sApp-img {
-        border-radius: 5em;
+        width: 190px;
+        border-radius: 3em;
     }
 }
 
