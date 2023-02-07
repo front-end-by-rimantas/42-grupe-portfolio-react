@@ -461,6 +461,29 @@ header.container {
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
+.sApp-store{
+    width: 100%;
+    background: linear-gradient(rgba(16, 16, 45, 0.803), rgba(16, 16, 45, 0.803)), url('../../img/download-bg.webp') no-repeat fixed center center/cover;
+}
+h2.store-name{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.store-title > .title-desc{
+    text-align: center;
+    margin: 16px 0 30px;
+}
+.link-block{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
