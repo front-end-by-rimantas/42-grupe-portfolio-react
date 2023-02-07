@@ -3,6 +3,36 @@
 // EXECUTION
 
 /* header: start */
+const hamburgerDOM = document.querySelector('button.fa-bars');
+const exitDOM = document.querySelector('button.fa-times');
+const allContainersDOM = document.querySelectorAll('.container');
+const allFluidContainersDOM = document.querySelectorAll(`.container-fluid`);
+const bcttDOM = document.querySelector('.bctt');
+const burgSec = document.getElementById('burger-section');
+
+function kaDaryti() {
+    for (const x of allContainersDOM) {
+        x.classList.add('hidden');
+    }
+    for (const x of allFluidContainersDOM) {
+        x.classList.add('hidden');
+    }
+    bcttDOM.classList.add('hidden');
+    burgSec.classList.remove('hidden');
+}
+
+function kaDaryti2() {
+    for (const x of allContainersDOM) {
+        x.classList.remove('hidden');
+    }
+    for (const x of allFluidContainersDOM) {
+        x.classList.remove('hidden');
+    }
+    bcttDOM.classList.remove('hidden');
+    burgSec.classList.add('hidden');
+}
+hamburgerDOM.addEventListener('click', kaDaryti);
+exitDOM.addEventListener('click', kaDaryti2);
 /* header: end */
 
 /* Hero: start */
