@@ -339,29 +339,29 @@
     display: flex;
     justify-content: center;
 }
-.container > .fonas > .row > .subscribe{
+.container > .row > .subscribe{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.container > .fonas > .row > .subscribe > .section-tittle{
+.container > .row > .subscribe > .section-tittle{
     text-align: center;
 }
 
-.container > .fonas > .row > .subscribe > p{
+.container > .row > .subscribe > p{
     text-align: center;
     line-height: 20px;
 }
 
-.container > .fonas > .row > .subscribe > .form > input{
+.container > .row > .subscribe > .form > input{
     text-align: center;
     border-radius: 7px;
     height: 50px;
     font-size: 15px;
 }
 
-.container > .fonas > .row > .subscribe > .form > button {
+.container >.row > .subscribe > .form > button {
     margin-top: 0;
 }
 /* Subscribe to get updates - section: end */
