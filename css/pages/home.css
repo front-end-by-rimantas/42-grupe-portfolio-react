@@ -14,11 +14,25 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header: start */
+header .row {
+    padding: 0 !important;
+}
+.header-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo {
     float: left;
 }
-.nav-bar {
-    float: right;
+.header-col .fa-bars {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1em;
+    padding: 0.25em;
+    background: none;
+    border: none;
+    font-weight: 100;
 }
 .nav-bar > a {
     display: inline-block;
@@ -29,9 +43,48 @@
 .nav-bar > a:first-child{
     margin-left: 0;
 }
+/* delete after container fix? start */
+header.container {
+    background: transparent;
+}
+/*del cont fix end */
 /* header: end */
 
 /* Hero: start */
+.tittle-form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.fixed-bg {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+
+.fixed-bg > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fixed-bg > div {
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+    background: linear-gradient(-50deg,#8631e8 0%, #4628dc 100%);
+    opacity: 0.9;
+}
+/* delete after container fix? start */
+.container.hero {
+    background: transparent;
+}
+/*del cont fix end */
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
@@ -74,7 +127,7 @@
 .hero svg {
     transform: rotate(180deg);
     position: absolute;
-    bottom: 30px;
+    bottom: 29px;
     z-index: -1;
 }
 
@@ -116,8 +169,9 @@
     text-align: center;
     padding: 3em;
     border-radius: 1em;
-    box-shadow: 0 0.25em 0.5em rgba(0,0,0,.075);
+    box-shadow:  0.5em 0.5em 2.5em 0.3em rgba(0,0,0,.075);
     margin: 15px !important;
+    transition: linear 0.15s;
 }
 
 .express-box > .box-img {
@@ -127,15 +181,131 @@
     user-select: none;
 }
 
+.express-box:hover {
+    box-shadow: 0.5em 0.5em 2.5em 0.3em rgba(0,0,0,.175);
+
+    transform: translateY(-5%);
+}
 /* Express Functionality: end */
 
 /* Clients section: start */
+.client-img,
+.client-img >img {
+    float: left;
+    width: 100%;  
+}
+
+.client-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.client-title {
+    font-size:40px;
+}
+
+.icon-row::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #764fe0;
+}
+
+.icon-holder {
+    display: flex;
+}
+
+.client-img:last-child {
+    margin-top: 40px;
+}
 /* Clients section: end */
 
 /* Device section: start */
+.kaire{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    }
+
+.antraste{
+    display: flex;
+    flex-direction: column;
+}
+.kaire > .antraste > h2{
+    color: #222222;
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pomidoras{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+}
+.container > .row > .desine{
+    display: flex;
+    justify-content: center;
+}
+.desine > img{
+    object-fit: contain;
+    }
 /* Device section: end */
 
 /* How sApp works?: start */
+.app-container {
+    background: linear-gradient(-50deg,#8731E8 0%, #5236dc 80%);
+    text-align: center;
+}
+
+.app-container .section-tittle {
+    color: #fff;
+}
+
+.app-container p, .box-tittle, .tittle > h2 {
+    color:#fff;
+    line-height: 1.5em;
+}
+
+.app-container .row {
+    margin-bottom: 5%;
+}
+
+.app-container .tittle{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.app-img {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.info {
+    padding: 30px;
+}
+
+.section-tittle::after {
+    display: none;
+}
+
+@media (min-width: 576px){
+    .box-tittle {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px){
+    .box-tittle {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px){
+    .box-tittle {
+        font-size: 22px;
+    }
+}
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
@@ -287,43 +457,43 @@
 /* FAQ: end */
 
 /* Our Team Experts section: start */
-.team {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-
-.team-img {
-    margin: 15px;
-}
-
 @media (min-width: 136px) {
     .team-img {
-        width: 80%;
         border-radius: 6em;
     }
 }
 
-@media (min-width: 580px){
+@media (min-width: 576px){
     .team-img {
-        width: 200px;
-        border-radius: 8em; 
+        border-radius: 5.5em; 
+    }
+}
+
+@media (min-width: 768px){
+    .team-img {
+        border-radius: 10em;
     }
 }
 
 @media (min-width: 992px){
     .team-img {
-        border-radius: 5em;
+        border-radius: 10em;
     }
 }
 
 @media (min-width: 1200px){
     .team-img {
-        width: 200px;
         border-radius: 5em;
     }
+}
+
+@media (min-width: 1400px){
+    .team-img {
+        border-radius: 5em;
+    }
+}
+.teams > .team-img{
+    margin-bottom: 15px;
 }
 /* Our Team Experts section: end */
 
@@ -362,6 +532,39 @@
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
+.fonas{
+    background: url(../../img/zemelapis.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.container > .row > .subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container > .row > .subscribe > .section-tittle{
+    text-align: center;
+}
+
+.container > .row > .subscribe > p{
+    text-align: center;
+    line-height: 20px;
+}
+
+.container > .row > .subscribe > .form > input{
+    text-align: center;
+    border-radius: 7px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.container >.row > .subscribe > .form > button {
+    margin-top: 0;
+}
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
