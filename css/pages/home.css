@@ -51,6 +51,13 @@ header.container {
 /* header: end */
 
 /* Hero: start */
+.tittle-form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
 .fixed-bg {
     height: 90vh;
     width: 100%;
