@@ -1,8 +1,10 @@
 // IMPORT
-
+import { scrl } from '../components/scrl.js';
+import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
 // EXECUTION
 
 /* header: start */
+scrl(stickyHeaderScroll);
 /* header: end */
 
 /* Hero: start */

@@ -48,6 +48,12 @@ header.container {
     background: transparent;
 }
 /*del cont fix end */
+.sticky-header {
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff !important;
+}
 /* header: end */
 
 /* Hero: start */
