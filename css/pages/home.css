@@ -59,11 +59,17 @@ header.container {
 }
 
 .fixed-bg {
-    height: 90vh;
+    height: 110vh;
     width: 100%;
     position: absolute;
     top: 0;
     z-index: -2;
+}
+
+@media (min-width: 992px){
+    .fixed-bg {
+        height: 90vh;
+    }
 }
 
 .fixed-bg > img {
