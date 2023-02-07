@@ -617,6 +617,7 @@ footer.container  nav {
     padding: 0 0.5em;
     background-color: rgba(35,35,35,0.65);
     color: #fff;
+    border-radius: 0.25em;
 }
 
 .bctt:hover {
