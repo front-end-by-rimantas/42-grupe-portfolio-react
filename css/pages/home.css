@@ -505,31 +505,15 @@ header.container {
     display: inline-block;
 }
 
-@media (min-width: 136px) {
-    .sApp-img {
-        width: 40%;
-        border-radius: 2em;
-    }
-}
-
 @media (min-width: 580px){
     .sApp-img {
         width: 35%;
-        border-radius: 2em; 
-    }
-}
-
-@media (min-width: 992px){
-    .sApp-img {
-        width: 190px;
-        border-radius: 3em;
     }
 }
 
 @media (min-width: 1200px){
     .sApp-img {
         width: 190px;
-        border-radius: 5em;
         align-items: center;
     }
 }
