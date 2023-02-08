@@ -1,5 +1,6 @@
 // IMPORT
-
+import expressFunctionalityData from '../data/expressFunctionalityData.js';
+import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
 // EXECUTION
 
 /* header: start */
@@ -9,6 +10,7 @@
 /* Hero: end */
 
 /* Express Functionality: start */
+renderExpressFunctionality('express-grid', expressFunctionalityData);
 /* Express Functionality: end */
 
 /* Clients section: start */
