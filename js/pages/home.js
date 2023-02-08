@@ -1,52 +1,15 @@
 // IMPORT
 import expressFunctionalityData from '../data/expressFunctionalityData.js';
 import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
+import { validateForm } from '../components/validateForm.js';
 // EXECUTION
 
 /* header: start */
 /* header: end */
 
 /* Hero: start */
-const formDOM = document.querySelector('form.form');
-const formInputsDOM = formDOM.querySelectorAll('input');
-console.log(formInputsDOM);
-function validate() {
-    console.log('pavyko!');
-    for (const i of formInputsDOM) {
-        if (i.value === '') {
-            alert('Must enter ' + i.placeholder + ' value');
-        }
-        if (i.name === 'fname') {
-            const regex = /[^a-zA-Z\s]+/g;
-            if (regex.test(i.value)) {
-                alert('ERROR: Name has to be only letters');
-                break;
-            }
-        }
-        if (i.name === 'femail') {
-            const regex1 = /[@]/g;
-            const regex2 = /[.]/g;
-            if (!regex1.test(i.value) || !regex2.test(i.value)) {
-                alert('ERROR: email has to have @ and . symbols');
-                break;
-            } else if (i.value.match(regex1).length > 1) {
-                alert('ERROR: email has to have one @ symbol');
-                break;
-            } else if (i.value.indexOf('@') > i.value.lastIndexOf('.')) {
-                alert('ERROR: email has to have @ symbol before last . symbol');
-                break;
-            }
-        }
-        if (i.name === 'fphone') {
-            const regex = /\D/g;
-            if (regex.test(i.value)) {
-                alert('ERROR: phone has to be only numbers');
-                break;
-            }
-        }
-    }
-}
-formDOM.addEventListener('submit', validate);
+const heroFormDOM = document.querySelectorAll('form.form')[0];
+heroFormDOM.addEventListener('submit', () => validateForm(heroFormDOM));
 /* Hero: end */
 
 /* Express Functionality: start */
@@ -78,9 +41,13 @@ renderExpressFunctionality('express-grid', expressFunctionalityData);
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
+const subFormDOM = document.querySelectorAll('form.form')[1];
+subFormDOM.addEventListener('submit', () => validateForm(subFormDOM));
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
+const stayFormDOM = document.querySelectorAll('form.form')[2];
+stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
