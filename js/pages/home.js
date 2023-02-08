@@ -10,23 +10,35 @@ import { renderExpressFunctionality } from '../components/renderExpressFunctiona
 const formDOM = document.querySelector('form.form');
 const formInputsDOM = formDOM.querySelectorAll('input');
 console.log(formInputsDOM);
-function validate(){
+function validate() {
     console.log('pavyko!');
     for (const i of formInputsDOM) {
         if (i.value === '') {
-            alert ("Must enter " + i.placeholder + " value");
+            alert('Must enter ' + i.placeholder + ' value');
+        }
+        if (i.name === 'fname') {
+            const regex = /[^a-zA-Z\s]+/g;
+            if (regex.test(i.value)) {
+                alert('ERROR: Name has to be only letters');
+                break;
+            }
+        }
+        if (i.name === 'femail') {
+            const regex1 = /[@]/g;
+            const regex2 = /[.]/g;
+            if (!regex1.test(i.value) || !regex2.test(i.value)) {
+                alert('ERROR: email has to have @ and . symbols');
+                break;
+            }
         }
         if (i.name === 'fphone') {
-            for (const x of i.value) {
-                if (!Number.isInteger(Number(x))) {
-                    alert ("ERROR: phone has to be only numbers");
-                    break;
-                }
-            }    
+            const regex = /\D/g;
+            if (regex.test(i.value)) {
+                alert('ERROR: phone has to be only numbers');
+                break;
+            }
         }
     }
-    alert(formInputsDOM.name('fname').value);
-    
 }
 formDOM.addEventListener('submit', validate);
 /* Hero: end */
