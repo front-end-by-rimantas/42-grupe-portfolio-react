@@ -161,6 +161,20 @@ header.container {
     transform: none;
 }
 /* tittle end */
+.express-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 .express-box {
     display: flex;
     flex-direction: column;
