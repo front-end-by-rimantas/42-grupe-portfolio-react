@@ -277,12 +277,22 @@ header.container {
     margin-top: 40px;
 }
 
-.app-container .info::after{
-    content: '>';
-    position: absolute;
-    font-weight: 500;
-    font-size: 60px;
-    bottom: -285%;
+@media (min-width: 992px) {
+    .app-container .info::after {
+        content: '>';
+        color: #fff;
+        font-size: 60px;
+        font-weight: 500;
+        position: absolute;
+        transform: translate(390%, -220%);
+        transition: 0.2s;
+    }
+    .app-container .info:hover::after {
+        transform: translate(410%, -220%);
+    }
+    .app-container .info:last-child:after {
+        display: none;
+    }
 }
 
 .app-img {
