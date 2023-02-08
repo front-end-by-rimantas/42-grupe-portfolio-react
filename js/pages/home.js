@@ -7,6 +7,28 @@ import { renderExpressFunctionality } from '../components/renderExpressFunctiona
 /* header: end */
 
 /* Hero: start */
+const formDOM = document.querySelector('form.form');
+const formInputsDOM = formDOM.querySelectorAll('input');
+console.log(formInputsDOM);
+function validate(){
+    console.log('pavyko!');
+    for (const i of formInputsDOM) {
+        if (i.value === '') {
+            alert ("Must enter " + i.placeholder + " value");
+        }
+        if (i.name === 'fphone') {
+            for (const x of i.value) {
+                if (!Number.isInteger(Number(x))) {
+                    alert ("ERROR: phone has to be only numbers");
+                    break;
+                }
+            }    
+        }
+    }
+    alert(formInputsDOM.name('fname').value);
+    
+}
+formDOM.addEventListener('submit', validate);
 /* Hero: end */
 
 /* Express Functionality: start */
