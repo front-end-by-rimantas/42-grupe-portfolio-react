@@ -29,6 +29,12 @@ function validate() {
             if (!regex1.test(i.value) || !regex2.test(i.value)) {
                 alert('ERROR: email has to have @ and . symbols');
                 break;
+            } else if (i.value.match(regex1).length > 1) {
+                alert('ERROR: email has to have one @ symbol');
+                break;
+            } else if (i.value.indexOf('@') > i.value.lastIndexOf('.')) {
+                alert('ERROR: email has to have @ symbol before last . symbol');
+                break;
             }
         }
         if (i.name === 'fphone') {
