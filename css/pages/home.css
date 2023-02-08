@@ -263,7 +263,7 @@ header.container {
     color: #fff;
 }
 
-.app-container p, .box-tittle, .tittle > h2 {
+.app-container p, .white-text, .tittle > h2 {
     color:#fff;
     line-height: 1.5em;
 }
