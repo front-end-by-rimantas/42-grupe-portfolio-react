@@ -650,17 +650,12 @@ footer.container  nav {
     width: 100%;
     float: left;
 }
-/* footer: end  */
-
-/* footer bottom line: start*/
-.footer-line-text {
-    display: flex;
+.bottom-line  {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: row;
     justify-content: space-between;
 }
-.bottom-line {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-/* footer bottom line: end*/
+/* footer: end  */
 
 /* Back to top: start  */
 .bctt {
