@@ -1,8 +1,9 @@
 // IMPORT
 import expressFunctionalityData from '../data/expressFunctionalityData.js';
 import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
-import howSAppWorksData from '../components/renderHowSAppWorks.js';
-import { renderHowSAppWorksData } from '../components/renderHowSAppWorks.js';
+
+import howAppWorksData from '../components/renderHowAppWorks.js';
+import { renderHowAppWorks } from '../components/renderHowAppWorks.js';
 
 // EXECUTION
 
@@ -23,7 +24,7 @@ renderExpressFunctionality('express-grid', expressFunctionalityData);
 /* Device section: end */
 
 /* How sApp works?: start */
-renderHowSAppWorks('app', HowSAppWorksData);
+renderHowAppWorks('app', howAppWorksData);
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
