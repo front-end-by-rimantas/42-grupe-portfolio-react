@@ -72,7 +72,7 @@
 
 .row > [class*='col-'] {
     float: left;
-    background-color:aqua; /* delete at the end */
+    background-color: aqua; /* delete at the end */
     margin: 0 var(--half-gap);
 }
 
