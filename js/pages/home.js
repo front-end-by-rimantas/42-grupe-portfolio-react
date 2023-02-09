@@ -7,6 +7,9 @@ import { renderHowAppWorks } from '../components/renderHowAppWorks.js';
 
 import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
+
+import fullPowerData from '../data/fullPowerData.js';
+import { renderFullPower } from '../components/renderFullPower.js';
 // EXECUTION
 
 /* header: start */
@@ -64,6 +67,7 @@ renderHowAppWorks('info', howAppWorksData);
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
+renderFullPower('plans-row', fullPowerData);
 /* Unlock Full Power Of sApp - section: end */
 
 /* FAQ: start */
