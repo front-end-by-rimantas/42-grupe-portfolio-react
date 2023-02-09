@@ -33,6 +33,7 @@ header .row {
     background: none;
     border: none;
     font-weight: 100;
+    cursor: pointer;
 }
 .nav-bar {
     color: #f8f9fa;
@@ -62,6 +63,36 @@ header.container {
 }
 .sticky-header-colors > a:hover {
     color: #2c2e30;
+}
+.exit-btn{
+    font-size: 20px;
+    line-height: 2em;
+    width: 2em;
+    border: none;
+    font-weight: 100;
+    background-color: transparent;
+    justify-self: right;
+    cursor: pointer;
+}
+.burger-nav-bar {
+    font-size: 14px;
+    float: right;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:[row1-start] 40px [row1-end] repeat(6, 3.5em [row-start])
+}
+.burger-nav-bar > a {
+    font-size: inherit;
+    line-height: 1.5em;
+    color: #7e8085;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid #eee;
+}
+.burger-nav-bar > a:hover {
+    color: #000;
 }
 /* header: end */
 
@@ -176,6 +207,20 @@ header.container {
     transform: none;
 }
 /* tittle end */
+.express-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 .express-box {
     display: flex;
     flex-direction: column;
@@ -278,13 +323,9 @@ header.container {
     color: #fff;
 }
 
-.app-container p, .box-tittle, .tittle > h2 {
+.app-container p, .white-text, .tittle > h2 {
     color:#fff;
     line-height: 1.5em;
-}
-
-.app-container .row {
-    margin-bottom: 5%;
 }
 
 .app-container .tittle{
@@ -513,6 +554,25 @@ header.container {
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
+.sApp{
+    text-align: center;
+    margin-top: 30px;
+}
+.sApp > .sApp-img {
+    display: inline-block;
+}
+
+@media (min-width: 320px){
+    .sApp-img {
+        width: 155px;
+    }
+}
+
+@media (min-width: 576px){
+    .sApp-img {
+        width: 190px;
+    }
+}
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
