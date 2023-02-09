@@ -7,6 +7,8 @@ import { renderHowAppWorks } from '../components/renderHowAppWorks.js';
 
 import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
+
+import { validateForm } from '../components/validateForm.js';
 // EXECUTION
 
 /* header: start */
@@ -43,6 +45,8 @@ exitDOM.addEventListener('click', kaDaryti2);
 /* header: end */
 
 /* Hero: start */
+const heroFormDOM = document.querySelectorAll('form.form')[0];
+heroFormDOM.addEventListener('submit', () => validateForm(heroFormDOM));
 /* Hero: end */
 
 /* Express Functionality: start */
@@ -76,9 +80,13 @@ renderHowAppWorks('info', howAppWorksData);
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
+const subFormDOM = document.querySelectorAll('form.form')[1];
+subFormDOM.addEventListener('submit', () => validateForm(subFormDOM));
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
+const stayFormDOM = document.querySelectorAll('form.form')[2];
+stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
