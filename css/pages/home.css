@@ -327,23 +327,23 @@ header.container {
     padding: 30px;
 }
 
-.section-tittle::after {
+.app-container .section-tittle::after {
     display: none;
 }
 
 @media (min-width: 576px){
-    .box-tittle {
+    .app-container .box-tittle {
         font-size: 18px;
     }
 }
 
 @media (min-width: 992px){
-    .box-tittle {
+    .app-container .box-tittle {
         font-size: 20px;
     }
 }
 @media (min-width: 1200px){
-    .box-tittle {
+    .app-container .box-tittle {
         font-size: 22px;
     }
 }
