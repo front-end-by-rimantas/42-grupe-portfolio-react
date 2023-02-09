@@ -652,6 +652,16 @@ footer.container  nav {
 }
 /* footer: end  */
 
+/* footer bottom line: start*/
+.footer-line-text {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-line {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* footer bottom line: end*/
+
 /* Back to top: start  */
 .bctt {
     bottom: 20px;
