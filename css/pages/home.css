@@ -33,6 +33,7 @@ header .row {
     background: none;
     border: none;
     font-weight: 100;
+    cursor: pointer;
 }
 .nav-bar > a {
     display: inline-block;
@@ -48,9 +49,46 @@ header.container {
     background: transparent;
 }
 /*del cont fix end */
+.exit-btn{
+    font-size: 20px;
+    line-height: 2em;
+    width: 2em;
+    border: none;
+    font-weight: 100;
+    background-color: transparent;
+    justify-self: right;
+    cursor: pointer;
+}
+.burger-nav-bar {
+    font-size: 14px;
+    float: right;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:[row1-start] 40px [row1-end] repeat(6, 3.5em [row-start])
+}
+.burger-nav-bar > a {
+    font-size: inherit;
+    line-height: 1.5em;
+    color: #7e8085;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid #eee;
+}
+.burger-nav-bar > a:hover {
+    color: #000;
+}
 /* header: end */
 
 /* Hero: start */
+.tittle-form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
 .fixed-bg {
     height: 90vh;
     width: 100%;
@@ -154,6 +192,20 @@ header.container {
     transform: none;
 }
 /* tittle end */
+.express-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 992px) {
+    .express-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 .express-box {
     display: flex;
     flex-direction: column;
@@ -214,6 +266,36 @@ header.container {
 /* Clients section: end */
 
 /* Device section: start */
+.kaire{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    }
+
+.antraste{
+    display: flex;
+    flex-direction: column;
+}
+.kaire > .antraste > h2{
+    color: #222222;
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pomidoras{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+}
+.container > .row > .desine{
+    display: flex;
+    justify-content: center;
+}
+.desine > img{
+    object-fit: contain;
+    }
 /* Device section: end */
 
 /* How sApp works?: start */
@@ -226,13 +308,9 @@ header.container {
     color: #fff;
 }
 
-.app-container p, .box-tittle, .tittle > h2 {
+.app-container p, .white-text, .tittle > h2 {
     color:#fff;
     line-height: 1.5em;
-}
-
-.app-container .row {
-    margin-bottom: 5%;
 }
 
 .app-container .tittle{
@@ -499,6 +577,39 @@ header.container {
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
+.fonas{
+    background: url(../../img/zemelapis.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.container > .row > .subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container > .row > .subscribe > .section-tittle{
+    text-align: center;
+}
+
+.container > .row > .subscribe > p{
+    text-align: center;
+    line-height: 20px;
+}
+
+.container > .row > .subscribe > .form > input{
+    text-align: center;
+    border-radius: 7px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.container >.row > .subscribe > .form > button {
+    margin-top: 0;
+}
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
@@ -569,6 +680,11 @@ footer.container  nav {
 .dwl-apps > .app-btn > img {
     width: 100%;
     float: left;
+}
+.bottom-line  {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: row;
+    justify-content: space-between;
 }
 /* footer: end  */
 
