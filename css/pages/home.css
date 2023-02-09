@@ -461,49 +461,41 @@ header.container {
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
-.sApp-store-section,
-.sApp-store-section-section .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.sApp-store-section * {
-    color: var(--primary-background);
+.sApp{
+    text-align: center;
+    margin-top: 30px;
 }
-.sApp-store-section {
+.container-sApp {
+    
     min-height: 500px;
-    background-image: linear-gradient( 0deg,rgba(16, 16, 45, 0.8),rgba(16, 16, 45, 0.8)),
+    background: linear-gradient( 0deg,rgba(16, 16, 45, 0.8),rgba(16, 16, 45, 0.8)),
         url(../../img/download-bg.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sApp-store-section .row.download {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.container-sApp .tittle {
+    color: #fff;
 }
-.sApp-store-section .section-title {
-    margin-bottom: 15px;
+
+
+.sApp > .sApp-img {
+    display: inline-block;
 }
-.sApp-store-section .p {
-    font-weight: 300;
+
+
+@media (min-width: 320px){
+    .sApp-img {
+        width: 155px;
+    }
 }
-.sApp-store-section .a {
-    margin-bottom: 10px;
-}
-.sApp-store-section .img {
-    width: 190px;
-    height: 55px;
-}
-.sApp-store-section .foot-note {
-    font-style: italic;
+
+@media (min-width: 576px){
+    .sApp-img {
+        width: 190px;
+    }
 }
 /* sApp is available for all devices - section: end */
 
