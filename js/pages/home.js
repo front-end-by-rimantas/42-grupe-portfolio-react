@@ -1,4 +1,6 @@
 // IMPORT
+import { backToTopScroll } from '../components/backToTopScroll.js';
+import { scrl } from '../components/scrl.js';
 import expressFunctionalityData from '../data/expressFunctionalityData.js';
 import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
 
@@ -93,4 +95,5 @@ stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* footer: end  */
 
 /* Back to top: start  */
+scrl(backToTopScroll);
 /* Back to top: end  */
