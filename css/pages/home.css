@@ -461,13 +461,12 @@ header.container {
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
-
 .sApp{
     text-align: center;
     margin-top: 30px;
 }
-.container-sApp {
-    
+.container-sApp  {
+    padding-top: 70px;
     min-height: 500px;
     background: linear-gradient( 0deg,rgba(16, 16, 45, 0.8),rgba(16, 16, 45, 0.8)),
         url(../../img/download-bg.webp);
@@ -476,22 +475,22 @@ header.container {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container-sApp .tittle {
+.container-sApp .section-tittle, 
+.container-sApp .main-para {
+
     color: #fff;
 }
-
-
+.sApp-italic {
+    font-style: italic;
+}
 .sApp > .sApp-img {
     display: inline-block;
 }
-
-
 @media (min-width: 320px){
     .sApp-img {
         width: 155px;
     }
 }
-
 @media (min-width: 576px){
     .sApp-img {
         width: 190px;
