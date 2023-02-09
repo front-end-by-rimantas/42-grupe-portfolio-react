@@ -495,24 +495,24 @@ header.container {
 /* Unlock Full Power Of sApp - section: end */
 
 /* FAQ: start */
-.container > .faq > .kaire{
+.container > .faq > .faq-kaire{
     margin-top: 2em;
 }
-.container > .faq > .desine{
-    margin-top: 2em;
-}
-
-.container > .faq > .kaire > .faq-box{
-    margin-top: 2em;
-}
-.container > .faq > .desine > .faq-box{
+.container > .faq > .faq-desine{
     margin-top: 2em;
 }
 
-.container > .faq > .kaire > .faq-box > .faq-tittle{
+.container > .faq > .faq-kaire > .faq-box{
+    margin-top: 2em;
+}
+.container > .faq > .faq-desine > .faq-box{
+    margin-top: 2em;
+}
+
+.container > .faq > .faq-kaire > .faq-box > .faq-tittle{
     user-select: none;
 }
-.container > .faq > .desine > .faq-box > .faq-tittle{
+.container > .faq > .faq-desine > .faq-box > .faq-tittle{
     user-select: none;
 }
 
