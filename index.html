@@ -22,17 +22,33 @@
     <!-- header: start -->
     <header class="container">
         <div class="row">
-            <img src="./img/logo-white.webp" alt="logo" class="logo">
-            <nav class="nav-bar">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Pages</a>
-                <a href="#">Screenshots</a>
-                <a href="#">Pricing</a>
-                <a href="#">Contact</a>
-            </nav>
+            <div class="col-12 header-col">
+                <a class="logo-link" href="#">
+                    <img src="./img/logo-white.webp" alt="logo" class="logo">
+                </a>
+                <nav class="nav-bar hidden visible-lg">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Screenshots</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <button class="fa fa-bars hidden-lg"></button>
+            </div>
         </div>
     </header>
+    <section id="burger-section" class="hidden">
+        <nav class="burger-nav-bar">
+            <button class="exit-btn fa fa-times"></button>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pages</a>
+            <a href="#">Screenshots</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+    </section>
     <!-- header: end -->
 
     <!-- Hero: start-->
@@ -41,7 +57,7 @@
             <img src="./img/blog-4.webp" alt="hero background">
             <div></div>
         </div>
-        <div class="row">
+        <div class="row tittle-form-row">
             <div class="col-12 col-lg-7">
                 <h1 class="main-tittle">Stay connected with your customers</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
@@ -81,72 +97,91 @@
                 <p class="main-para hidden visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_1.webp" alt="functional">
-                <h4 class="box-tittle">Fully functional</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_2.webp" alt="chat">
-                <h4 class="box-tittle">Live Chat</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_3.webp" alt="secure">
-                <h4 class="box-tittle">Secure Data</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_4.webp" alt="customize">
-                <h4 class="box-tittle">Easy to Customize</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_5.webp" alt="responsive">
-                <h4 class="box-tittle">Responsive Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-            <div class="express-box col-12 col-md-6 col-lg-4">
-                <img class="box-img" src="./img/featured_image_6.webp" alt="help">
-                <h4 class="box-tittle">Help Documentation</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
-            </div>
-        </div>
+        <div class="row express-grid" id="express-grid"></div>
     </section>
     <!-- Express Functionality: end-->
 
     <!-- Clients section: start-->
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 client-img hidden visible-lg">
+                <img src="./img/telefonas.webp" alt="Phone" class="phone-image">
+            </div>
+            <div class="col-12 col-lg-6 client-text">
+                <h2 class="client-title">Easily communicate with clients using sApp.</h2>
+                <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
+                <p class="icon-row">Combined with a handful of model sentence structures looks reasonable.</p>
+                <p class="icon-row">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <p class="icon-row">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                <p class="icon-row">All the Lorem Ipsum generators on the Internet tend to repeat necessary.</p>
+                <div class="icon-holder">
+                    <div class="icon-box fa fa-bell"></div>
+                    <div class="icon-box fa fa-envelope-open"></div>
+                    <div class="icon-box fa fa-video-camera"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 client-img hidden-lg">
+                <img src="./img/telefonas.webp" alt="Phone" class="phone-image">
+            </div>
+        </div>
+    </section>
     <!-- Clients section: end-->
 
     <!-- Device section: start-->
-    <div class="icon-box">
-        <i class="fa fa-align-justify" aria-hidden="true"></i>
-    </div>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="kaire col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="antraste">
+                        <h2>
+                            Make Your Device Manage Everything For You
+                        </h2>
+                    </div>
+                    <div class="pomidoras">
+                        <div class="icon-box">
+                            <i class="fa fa-align-justify" aria-hidden="true"></i>
+                        </div>
+                        <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                    </div>
+                    <div class="pomidoras">
+                        <div class="icon-box">
+                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                        </div>
+                        <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                    </div>
+                    <div class="pomidoras">
+                        <div class="icon-box">
+                            <i class="fa fa-fire" aria-hidden="true"></i>
+                        </div>
+                        <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                    </div>
+                    <div class="pomidoras">
+                        <div class="icon-box">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </div>
+                        <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                    </div>
+                    <div>
+                        <a class="btn" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="desine col-12 col-md-6 hidden hidden-sm hidden-md visible-flex-lg visible-flex-xl visible-flex-xxl">
+                <img src="./img/service_thumb_2.webp" alt="Device photo">
+            </div>
+        </div>
+    </section>
+
     <!-- Device section: end-->
 
-    <!-- How sApp works?: start-->
-    <section class="container app-container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-6 ml-lg-3 tittle">
-                <h2 class="section-tittle">How sApp works?</h2>
-                <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
-            </div>
-                    <div class="info col-12 col-md-4">
-                        <img class="app-img" src="./img/work_thumb_1.webp" alt="Install the app">
-                        <h4 class="box-tittle">Install the app</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
-                    </div>
-                    <div class="info col-12 col-md-4">
-                        <img class="app-img" src="./img/work_thumb_2.webp" alt="Setup your profile">
-                        <h4 class="box-tittle">Setup your profile</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
-                    </div>
-                    <div class="info col-12 col-md-4">
-                        <img class="app-img" src="./img/work_thumb_3.webp" alt="Enjoy the features!">
-                        <h4 class="box-tittle">Enjoy the features!</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
-                    </div>
+<!-- How sApp works?: start-->
+    <section id="howAppWorks" class="container app-container">
+        <div id="app" class="row">
+            <div id="title" class="row"></div>
+            <div id="info" class="row col-12"></div>
+            <div id="info" class="row col-12"></div>
+            <div id="info" class="row col-12"></div>
         </div>
     </section>
     <!-- How sApp works?: end-->
@@ -162,7 +197,7 @@
             </div>
         </div>
         <div class="row">
-            <img class="col-12 carousel-placeholder" src="/img/static_screeonshot.webp" alt="carousel">
+            <img class="col-12 carousel-placeholder" src="./img/static_screeonshot.webp" alt="carousel">
         </div>
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 testimonial">
@@ -274,7 +309,6 @@
             </div>
         </div>
     </section>
-   
     <!-- FAQ: end-->
 
     <!-- Our Team Experts section: start-->
@@ -296,17 +330,42 @@
     <!-- Our Team Experts section: end-->
 
     <!-- sApp is available for all devices - section: start-->
+    <div class="container">
+        <div class="row">
+            <div class="tittle col-12 col-md-10 ml-md-1">
+                <h2 class="section-tittle ">sApp is available for all devices</h2>
+                <div class="main-para hidden-sm">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</div>
+                <div class="main-para hidden visible-sm">sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</div>
+                <div class="sApp">
+                    <a href="#"><img class="sApp-img" src="./img/google-play.webp" alt="Google-play"></a>
+                    <a href="#"><img class="sApp-img" src="./img/app-store.webp" alt="App-store"></a>
+                </div>
+                <p class="main-para">* Available on iPhone, iPad and all Android devices</p>
+            </div>
+        </div>
+    </div>
     <!-- sApp is available for all devices - section: end-->
 
     <!-- Subscribe to get updates - section: start-->
+    <section class="container fonas">
+            <div class="row">
+                <div class="subscribe col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3">
+                    <h2 class="section-tittle">Subscribe to get updates</h2>
+                    <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+                    <div class="form">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!-- Subscribe to get updates - section: end-->
     
     <!-- Stay Tuned section: start-->
     <section class="container">
         <div class="row">
-            <div class=" col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 tittle">
-                <div class="section-tittle">Stay Tuned
-                </div>
+            <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 tittle">
+                <div class="section-tittle">Stay Tuned</div>
                 <div class="main-para hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</div>
                 <div class="main-para hidden visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</div>
                 
@@ -387,8 +446,8 @@
             <div class="col-12 col-sm-6 col-lg-3">
                 <h4>Download</h4>
                 <div class="dwl-apps">
-                    <a class="app-btn" href="#"><img src="/img/google-play-black.webp" alt="Google play"></a>
-                    <a class="app-btn" href="#"><img src="/img/img.webp" alt="App store"></a>
+                    <a class="app-btn" href="#"><img src="./img/google-play-black.webp" alt="Google play"></a>
+                    <a class="app-btn" href="#"><img src="./img/img.webp" alt="App store"></a>
                 </div>
             </div>
         </div>
@@ -398,6 +457,7 @@
     <!-- Back to top: start -->
     <a href="#" class="bctt fa fa-arrow-up "></a>
     <!-- Back to top: end -->
+    <script src="./js/pages/home.js" type="module" defer></script>
 </body>
 
 </html>
