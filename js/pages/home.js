@@ -93,6 +93,9 @@ stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
+const socialIconsDOM = document.getElementById(social_icons);
+const serviceItemsDOM = socialIconsDOM.querySelectorAll 
+
 /* footer: end  */
 
 /* Back to top: start  */
