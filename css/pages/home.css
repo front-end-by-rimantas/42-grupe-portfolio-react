@@ -168,6 +168,8 @@ header.container {
     align-items: center;
     padding: 3em;
     box-shadow: 0 1em 3em rgba(0,0,0,.2);
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 .hero.container-fluid {
@@ -441,10 +443,6 @@ header.container {
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
-.bg-gray {
-    background-color: #f6f9fe;
-}
-
 .row.plans {
     display: flex;
     flex-wrap: wrap;
