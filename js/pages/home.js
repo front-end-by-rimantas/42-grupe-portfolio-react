@@ -9,6 +9,8 @@ import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
 import { validateForm } from '../components/validateForm.js';
 import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
+import { teamExpert } from '../components/teamExpert.js';
+import teamExpertData from '../data/teamExpertData.js';
 
 // EXECUTION
 
@@ -77,6 +79,7 @@ renderHowAppWorks('info', howAppWorksData);
 /* FAQ: end */
 
 /* Our Team Experts section: start */
+teamExpert('allTeam', teamExpertData);
 /* Our Team Experts section: end */
 
 /* sApp is available for all devices - section: start */
