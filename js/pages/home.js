@@ -9,6 +9,8 @@ import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
 import { validateForm } from '../components/validateForm.js';
 import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
+import deviceData from '../data/deviceData.js';
+import { device } from '../components/device.js';
 
 // EXECUTION
 
@@ -60,6 +62,7 @@ renderExpressFunctionality('express-grid', expressFunctionalityData);
 /* Clients section: end */
 
 /* Device section: start */
+device('pomidoras', deviceData);
 /* Device section: end */
 
 /* How sApp works?: start */
