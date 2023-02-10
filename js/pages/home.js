@@ -3,14 +3,13 @@ import { backToTopScroll } from '../components/backToTopScroll.js';
 import { scrl } from '../components/scrl.js';
 import expressFunctionalityData from '../data/expressFunctionalityData.js';
 import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
-
 import howAppWorksData from '../data/howAppWorksData.js';
 import { renderHowAppWorks } from '../components/renderHowAppWorks.js';
-
 import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
-
 import { validateForm } from '../components/validateForm.js';
+import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
+
 // EXECUTION
 
 /* header: start */
@@ -44,6 +43,8 @@ function kaDaryti2() {
 }
 hamburgerDOM.addEventListener('click', kaDaryti);
 exitDOM.addEventListener('click', kaDaryti2);
+
+scrl(stickyHeaderScroll);
 /* header: end */
 
 /* Hero: start */

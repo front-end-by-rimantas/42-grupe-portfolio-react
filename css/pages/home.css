@@ -35,10 +35,13 @@ header .row {
     font-weight: 100;
     cursor: pointer;
 }
+.nav-bar {
+    color: #f8f9fa;
+}
 .nav-bar > a {
     display: inline-block;
     margin: 16.5px;
-    color: #f8f9fa;
+    color: inherit;
     text-decoration: none;
 }
 .nav-bar > a:first-child{
@@ -49,6 +52,18 @@ header.container {
     background: transparent;
 }
 /*del cont fix end */
+.sticky-header {
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff !important;
+}
+.sticky-header-colors {
+    color: #7e8085;
+}
+.sticky-header-colors > a:hover {
+    color: #2c2e30;
+}
 .exit-btn{
     font-size: 20px;
     line-height: 2em;
