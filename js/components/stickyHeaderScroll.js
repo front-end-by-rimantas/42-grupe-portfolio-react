@@ -5,6 +5,9 @@ function stickyHeaderScroll(scrollPos) {
         headerDOM
             .querySelector('.nav-bar')
             .classList.add('sticky-header-colors');
+        headerDOM
+            .querySelector('.header-col')
+            .classList.add('sticky-header-colors');
         headerDOM.querySelector(
             'a.logo-link'
         ).innerHTML = `<img src="./img/logo.webp" alt="logo" class="logo">`;
@@ -12,6 +15,9 @@ function stickyHeaderScroll(scrollPos) {
         headerDOM.classList.remove('sticky-header');
         headerDOM
             .querySelector('.nav-bar')
+            .classList.remove('sticky-header-colors');
+        headerDOM
+            .querySelector('.header-col')
             .classList.remove('sticky-header-colors');
         headerDOM.querySelector(
             'a.logo-link'

@@ -25,8 +25,11 @@ header .row {
 .logo {
     float: left;
 }
-.header-col .fa-bars {
+.header-col {
     color: #fff;
+}
+.header-col .fa-bars {
+    color: inherit;
     font-size: 35px;
     line-height: 1em;
     padding: 0.25em;
