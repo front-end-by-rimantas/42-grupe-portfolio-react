@@ -140,6 +140,12 @@ header.container {
     background: transparent;
 }
 /*del cont fix end */
+.tittle-form-row .main-para {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5em;
+}
+
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
