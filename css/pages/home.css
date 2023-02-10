@@ -50,6 +50,9 @@ header .row {
 .nav-bar > a:first-child{
     margin-left: 0;
 }
+.nav-bar > a:hover {
+    color: #b7aad4;
+}
 /* delete after container fix? start */
 header.container {
     background: transparent;
