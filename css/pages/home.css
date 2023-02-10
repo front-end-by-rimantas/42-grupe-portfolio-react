@@ -170,6 +170,10 @@ header.container {
     box-shadow: 0 1em 3em rgba(0,0,0,.2);
 }
 
+.hero  .form .text-link {
+    font-size: 13px;
+}
+
 .hero.container-fluid {
     position: relative;
     background-color: #fff;
