@@ -266,11 +266,6 @@ header.container {
     flex-direction: column;
     gap: 1em;
 }
-
-.client-title {
-    font-size:40px;
-}
-
 .icon-row::before {
     content: "✔";
     margin-right: 10px;
