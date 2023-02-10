@@ -668,8 +668,10 @@ header.container {
 }
 .container-sApp .section-tittle, 
 .container-sApp .main-para {
-
     color: #fff;
+}
+.container-sApp > .row .section-tittle::after {
+    display: none;
 }
 .sApp-italic {
     font-style: italic;
@@ -707,7 +709,9 @@ header.container {
 .container > .row > .subscribe > .section-tittle{
     text-align: center;
 }
-
+.container > .row > .subscribe > .section-tittle::after {
+    display: none;
+}
 .container > .row > .subscribe > p{
     text-align: center;
     line-height: 20px;
