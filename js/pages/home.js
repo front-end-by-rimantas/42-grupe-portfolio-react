@@ -9,6 +9,8 @@ import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
 import { validateForm } from '../components/validateForm.js';
 import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
+import { stayTuned } from '../components/stayTuned.js';
+import stayTunedData from '../data/stayTunedData.js';
 
 // EXECUTION
 
@@ -90,6 +92,7 @@ subFormDOM.addEventListener('submit', () => validateForm(subFormDOM));
 /* Stay Tuned section: start */
 const stayFormDOM = document.querySelectorAll('form.form')[2];
 stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
+stayTuned('stay', stayTunedData);
 /* Stay Tuned section: end */
 
 /* footer: start  */
