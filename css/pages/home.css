@@ -522,6 +522,10 @@ header.container {
     bottom: 0;
     transform: translateY(50%);
 }
+
+.container > .row.full-power-bot {
+    padding-top: 60px;
+}
 /* Unlock Full Power Of sApp - section: end */
 
 /* FAQ: start */
