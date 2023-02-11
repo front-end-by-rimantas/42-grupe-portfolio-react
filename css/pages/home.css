@@ -100,6 +100,9 @@ header.container {
 .burger-nav-bar > a:hover {
     color: #000;
 }
+header.container.sticky-placeholder {
+    height: 82px;
+}
 /* header: end */
 
 /* Hero: start */
