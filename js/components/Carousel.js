@@ -36,6 +36,9 @@ class Carousel {
         }
         if (typeof this.data.controls.autoSlideEnabled === 'boolean') {
             this.autoSlideEnabled = this.data.controls.autoSlideEnabled;
+            if (typeof this.data.controls.autoSlideDelay === 'number') {
+                this.autoSlideDelay = this.data.controls.autoSlideDelay;
+            }
         }
         if (typeof this.data.controls.slideDragEnabled === 'boolean') {
             this.slideDragEnabled = this.data.controls.slideDragEnabled;

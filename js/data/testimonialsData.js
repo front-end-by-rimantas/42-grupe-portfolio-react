@@ -5,6 +5,7 @@ const testimonialsData = {
         dotsEnabled: true,
         autoSlideEnabled: true,
         slideDragEnabled: false,
+        autoSlideDelay: 7000,
     },
     itemsPerView: [
         {
