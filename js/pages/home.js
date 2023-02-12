@@ -93,14 +93,22 @@ stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
+const footerSocialsData = [
+    icon, 'fa fa-google-plus','fa fa-google-plus',
+    href, "#",
+];
 const socialIcons = document.getElementById('social_icons');
-const socialLinks = socialIcons.querySelectorAll('a');
-socialLinks.forEach(function(link) {
-  link.addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = '/';
-  });
-});
+
+let HTML = '';
+for (const icon of footerSocialsData) {
+HTML += `<a class="icon-box facebook" href="#">
+<div class="fa fa-facebook"></div>
+<div class="fa fa-facebook"></div>
+</a>`;
+
+}
+socialIcons.innerHTML = HTML;
+  
 /* footer: end  */
 
 /* Back to top: start  */
