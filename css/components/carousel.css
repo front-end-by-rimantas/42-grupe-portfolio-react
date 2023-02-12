@@ -1,0 +1,49 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.carousel > .gallery {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel > .gallery > .list {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s;
+}
+.carousel .list > .item {
+    width: 100%;
+    float: left;
+}
+.carousel > .controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.carousel > .controls > .dots {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carousel .dots > .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.carousel .dots > .dot.active-dot {
+    background-color: #7c4fe0;
+}
+.carousel > .controls > .fa {
+    width: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
