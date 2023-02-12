@@ -93,9 +93,14 @@ stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
-const socialIconsDOM = document.getElementById(social_icons);
-const serviceItemsDOM = socialIconsDOM.querySelectorAll 
-
+const socialIcons = document.getElementById('social_icons');
+const socialLinks = socialIcons.querySelectorAll('a');
+socialLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = '/';
+  });
+});
 /* footer: end  */
 
 /* Back to top: start  */
