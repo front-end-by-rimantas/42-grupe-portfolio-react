@@ -46,9 +46,13 @@ function kaDaryti2() {
 }
 hamburgerDOM.addEventListener('click', kaDaryti);
 exitDOM.addEventListener('click', kaDaryti2);
+
+scrl(stickyHeaderScroll);
 /* header: end */
 
 /* Hero: start */
+const heroFormDOM = document.querySelectorAll('form.form')[0];
+heroFormDOM.addEventListener('submit', () => validateForm(heroFormDOM));
 /* Hero: end */
 
 /* Express Functionality: start */
@@ -59,6 +63,7 @@ renderExpressFunctionality('express-grid', expressFunctionalityData);
 /* Clients section: end */
 
 /* Device section: start */
+device('pomidoras', deviceData);
 /* Device section: end */
 
 /* How sApp works?: start */
@@ -83,13 +88,18 @@ renderFullPower('plans-row', fullPowerData);
 /* sApp is available for all devices - section: end */
 
 /* Subscribe to get updates - section: start */
+const subFormDOM = document.querySelectorAll('form.form')[1];
+subFormDOM.addEventListener('submit', () => validateForm(subFormDOM));
 /* Subscribe to get updates - section: end */
 
 /* Stay Tuned section: start */
+const stayFormDOM = document.querySelectorAll('form.form')[2];
+stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
 /* Stay Tuned section: end */
 
 /* footer: start  */
 /* footer: end  */
 
 /* Back to top: start  */
+scrl(backToTopScroll);
 /* Back to top: end  */
