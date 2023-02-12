@@ -203,6 +203,7 @@ class Carousel {
             if (this.itemsPerView !== itemsToRender) {
                 this.render(itemsToRender);
                 this.itemsPerView = itemsToRender;
+                this.addEvents();
             }
         });
 
