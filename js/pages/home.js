@@ -1,13 +1,16 @@
 // IMPORT
+import { backToTopScroll } from '../components/backToTopScroll.js';
+import { scrl } from '../components/scrl.js';
 import expressFunctionalityData from '../data/expressFunctionalityData.js';
 import { renderExpressFunctionality } from '../components/renderExpressFunctionality.js';
-
 import howAppWorksData from '../data/howAppWorksData.js';
 import { renderHowAppWorks } from '../components/renderHowAppWorks.js';
-
 import howAppTitleData from '../data/howAppTitleData.js';
 import { renderHowAppTitle } from '../components/renderHowAppTitle.js';
-
+import { validateForm } from '../components/validateForm.js';
+import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
+import deviceData from '../data/deviceData.js';
+import { device } from '../components/device.js';
 import fullPowerData from '../data/fullPowerData.js';
 import { renderFullPower } from '../components/renderFullPower.js';
 // EXECUTION
