@@ -12,6 +12,7 @@ class Carousel {
         this.anglesEnabled = false;
         this.animationInProgress = false;
         this.animationDuration = 500;
+        this.animationResetDelay = 50;
         this.autoSlideDelay = 3000;
         this.itemsPerView = 1;
         this.visibleItemIndex = 0; // matomoje ekrano dalyje is atvaizduotu elementu labiausiai kaireje stovincio index'as visu duomenu atzvilgiu
@@ -167,6 +168,24 @@ class Carousel {
         }
     }
 
+    nextItemAnimation() {
+        this.visibleItemIndex++;
+        this.slideAnimation();
+        if (
+            this.data.list.length + this.itemsPerView ===
+            this.visibleItemIndex
+        ) {
+            setTimeout(() => {
+                this.listDOM.style.transition = 'all 0s';
+                this.visibleItemIndex = this.itemsPerView;
+                this.slideAnimation();
+            }, this.animationDuration);
+            setTimeout(() => {
+                this.listDOM.style.transition = `all ${this.animationDuration}ms`;
+            }, this.animationDuration + this.animationResetDelay);
+        }
+    }
+
     addEvents() {
         window.addEventListener('resize', () => {
             const itemsToRender = this.calculateItemsPerViewValue();
@@ -207,7 +226,7 @@ class Carousel {
                         }, this.animationDuration);
                         setTimeout(() => {
                             this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                        }, this.animationDuration + 10);
+                        }, this.animationDuration + this.animationResetDelay);
                     }
                     setTimeout(() => {
                         this.animationInProgress = false;
@@ -218,21 +237,7 @@ class Carousel {
             this.allAnglesDOM[1].addEventListener('click', () => {
                 if (!this.animationInProgress) {
                     this.animationInProgress = true;
-                    this.visibleItemIndex++;
-                    this.slideAnimation();
-                    if (
-                        this.data.list.length + this.itemsPerView ===
-                        this.visibleItemIndex
-                    ) {
-                        setTimeout(() => {
-                            this.listDOM.style.transition = 'all 0s';
-                            this.visibleItemIndex = this.itemsPerView;
-                            this.slideAnimation();
-                        }, this.animationDuration);
-                        setTimeout(() => {
-                            this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                        }, this.animationDuration + 10);
-                    }
+                    this.nextItemAnimation();
                     setTimeout(() => {
                         this.animationInProgress = false;
                     }, this.animationDuration);
@@ -244,21 +249,7 @@ class Carousel {
     autoSlide() {
         this.autoSliderToggle = this.DOM.querySelector(`.auto-slider`);
         setInterval(() => {
-            this.visibleItemIndex++;
-            this.slideAnimation();
-            if (
-                this.data.list.length + this.itemsPerView ===
-                this.visibleItemIndex
-            ) {
-                setTimeout(() => {
-                    this.listDOM.style.transition = 'all 0s';
-                    this.visibleItemIndex = this.itemsPerView;
-                    this.slideAnimation();
-                }, this.animationDuration);
-                setTimeout(() => {
-                    this.listDOM.style.transition = `all ${this.animationDuration}ms`;
-                }, this.animationDuration + 10);
-            }
+            this.nextItemAnimation();
         }, this.autoSlideDelay);
     }
 }
