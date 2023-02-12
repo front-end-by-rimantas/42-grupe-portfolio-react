@@ -3,6 +3,8 @@ const interfaceData = {
     controls: {
         anglesEnabled: true,
         dotsEnabled: true,
+        autoSlideEnabled: false,
+        slideDragEnabled: true,
     },
     itemsPerView: [
         {

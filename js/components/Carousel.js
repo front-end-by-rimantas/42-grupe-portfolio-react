@@ -10,6 +10,8 @@ class Carousel {
         this.allAnglesDOM = null;
         this.dotsEnabled = true;
         this.anglesEnabled = false;
+        this.autoSlideEnabled = true;
+        this.slideDragEnabled = false;
         this.animationInProgress = false;
         this.animationDuration = 500;
         this.animationResetDelay = 50;
@@ -32,6 +34,12 @@ class Carousel {
         if (typeof this.data.controls.dotsEnabled === 'boolean') {
             this.dotsEnabled = this.data.controls.dotsEnabled;
         }
+        if (typeof this.data.controls.autoSlideEnabled === 'boolean') {
+            this.autoSlideEnabled = this.data.controls.autoSlideEnabled;
+        }
+        if (typeof this.data.controls.slideDragEnabled === 'boolean') {
+            this.slideDragEnabled = this.data.controls.slideDragEnabled;
+        }
 
         this.data.itemsPerView = this.data.itemsPerView.sort(
             (a, b) => a.minWidth - b.minWidth
@@ -41,6 +49,7 @@ class Carousel {
         this.render(this.itemsPerView);
         this.addEvents();
         this.autoSlide();
+        this.dragCarousel();
     }
 
     isValidSelector() {
@@ -247,10 +256,81 @@ class Carousel {
     }
 
     autoSlide() {
-        this.autoSliderToggle = this.DOM.querySelector(`.auto-slider`);
-        setInterval(() => {
-            this.nextItemAnimation();
-        }, this.autoSlideDelay);
+        if (this.autoSlideEnabled) {
+            setInterval(() => {
+                this.nextItemAnimation();
+            }, this.autoSlideDelay);
+        }
+    }
+
+    dragCarousel() {
+        if (this.slideDragEnabled) {
+            let sliderContainer = this.DOM.querySelector(
+                '.carousel > .gallery'
+            );
+            let innerSlider = this.DOM.querySelector('.gallery > .list');
+
+            let pressed = false;
+            let startX;
+            let x;
+            let currentTransform = Number(
+                innerSlider.style.transform.slice(11, -2)
+            );
+            let viewWindowWidth = sliderContainer.getBoundingClientRect().width;
+            sliderContainer.addEventListener('mousedown', (e) => {
+                pressed = true;
+                startX =
+                    ((e.clientX - innerSlider.offsetLeft) / viewWindowWidth) *
+                    ((this.visibleItemIndex /
+                        (this.data.list.length + 2 * this.itemsPerView)) *
+                        100);
+                sliderContainer.style.cursor = 'grabbing';
+            });
+
+            sliderContainer.addEventListener('mouseenter', () => {
+                sliderContainer.style.cursor = 'grab';
+            });
+
+            sliderContainer.addEventListener('mouseup', () => {
+                sliderContainer.style.cursor = 'grab';
+                pressed = false;
+                currentTransform = Number(
+                    innerSlider.style.transform.slice(11, -2)
+                );
+            });
+
+            sliderContainer.addEventListener('mousemove', (e) => {
+                if (!pressed) return;
+                e.preventDefault();
+                x = e.clientX;
+                const dragOffset =
+                    ((x - innerSlider.offsetLeft) / viewWindowWidth) *
+                        ((this.visibleItemIndex /
+                            (this.data.list.length + 2 * this.itemsPerView)) *
+                            100) -
+                    startX;
+                innerSlider.style.transform = `translateX(${
+                    currentTransform + dragOffset
+                }%)`;
+                checkBoundary();
+            });
+
+            const checkBoundary = () => {
+                let totalTransform =
+                    ((2 * this.itemsPerView + 1) /
+                        (this.data.list.length + 2 * this.itemsPerView)) *
+                    -100;
+                if (Number(innerSlider.style.transform.slice(11, -2)) >= 0) {
+                    innerSlider.style.transform = `translateX(0%)`;
+                }
+                if (
+                    Number(innerSlider.style.transform.slice(11, -2)) <=
+                    totalTransform
+                ) {
+                    innerSlider.style.transform = `translateX(${totalTransform}%)`;
+                }
+            };
+        }
     }
 }
 

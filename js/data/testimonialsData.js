@@ -3,6 +3,8 @@ const testimonialsData = {
     controls: {
         anglesEnabled: false,
         dotsEnabled: true,
+        autoSlideEnabled: true,
+        slideDragEnabled: false,
     },
     itemsPerView: [
         {
