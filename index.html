@@ -20,12 +20,10 @@
 
 <body>
     <!-- header: start -->
-    <header class="container">
+    <header class="container small-padding">
         <div class="row">
             <div class="col-12 header-col">
-                <a class="logo-link" href="#">
-                    <img src="./img/logo-white.webp" alt="logo" class="logo">
-                </a>
+                <a class="logo-link" href="#"></a>
                 <nav class="nav-bar hidden visible-lg">
                     <a href="#">Home</a>
                     <a href="#">Features</a>
@@ -49,10 +47,11 @@
             <a href="#">Contact</a>
         </nav>
     </section>
+    <header class="container sticky-placeholder hidden"></header>
     <!-- header: end -->
 
     <!-- Hero: start-->
-    <section class="container hero">
+    <section class="container hero small-padding">
         <div class="fixed-bg">
             <img src="./img/blog-4.webp" alt="hero background">
             <div></div>
@@ -60,23 +59,23 @@
         <div class="row tittle-form-row">
             <div class="col-12 col-lg-7">
                 <h1 class="main-tittle">Stay connected with your customers</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
+                <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
                 <a class="trail-btn" href="#">Start free trail</a>
             </div>
-            <div class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 form">
+            <form class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 form">
                 <h3 class="form-tittle">Get started for FREE!</h3>
                 <p>Fill all fields so we can get some info about you. We'll never send you spam</p>
-                <input placeholder="Name" type="text">
-                <input placeholder="Email" type="text">
-                <input placeholder="Phone" type="text">
+                <input placeholder="Name" type="text" name="fname">
+                <input placeholder="Email" type="text" name="femail">
+                <input placeholder="Phone" type="text" name="fphone">
                 <button type="submit" class="btn">Send message</button>
                 <div class="text-link">
                     By signing up, you accept our <a href="#">Terms</a> & <a href="#">Privacy Policy</a>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
-    <section class="container-fluid hero">
+    <section class="container-fluid hero small-padding">
         <div class="row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg>
         </div>
@@ -84,7 +83,7 @@
     <!-- Hero: end-->
 
     <!-- Express Functionality: start-->
-    <section class="container">
+    <section class="container bg-white">
         <div class="row">
             <div class="premium">
                 <span><i class="fa fa-lightbulb-o"></i> Premium</span>Features
@@ -102,13 +101,13 @@
     <!-- Express Functionality: end-->
 
     <!-- Clients section: start-->
-    <section class="container">
+    <section class="container bg-gray">
         <div class="row">
             <div class="col-12 col-lg-6 client-img hidden visible-lg">
                 <img src="./img/telefonas.webp" alt="Phone" class="phone-image">
             </div>
-            <div class="col-12 col-lg-6 client-text">
-                <h2 class="client-title">Easily communicate with clients using sApp.</h2>
+            <div class="tittle col-12 col-lg-6 client-text">
+                <h2 class="section-tittle">Easily communicate with clients using sApp.</h2>
                 <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
                 <p class="icon-row">Combined with a handful of model sentence structures looks reasonable.</p>
                 <p class="icon-row">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
@@ -138,30 +137,7 @@
                             Make Your Device Manage Everything For You
                         </h2>
                     </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        </div>
-                        <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        </div>
-                        <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-fire" aria-hidden="true"></i>
-                        </div>
-                        <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </div>
-                        <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
+                    <div  id="pomidoras"></div>
                     <div>
                         <a class="btn" href="#">Learn More</a>
                     </div>
@@ -225,7 +201,7 @@
         </div>
         <div class="row plans" id="plans-row">
         </div>
-        <div class="row">
+        <div class="row full-power-bot">
             <div class="col-12 col-md-6 ml-md-3">
                 <div class="text-link">Not sure what to choose? <a href="#">Contact Us</a></div>
             </div>
@@ -234,6 +210,49 @@
     <!-- Unlock Full Power Of sApp - section: end-->
 
     <!-- FAQ: start-->
+    <section class="container">
+        <div class="row">
+                <div class="tittle col-8 ml-2">
+                    <h2 class="section-tittle">Frequeantly Asked Questions</h2>
+                    <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                </div>
+        </div>
+        <div class="row faq">
+            <div class="faq-kaire col-12 col-md-6">
+                <div class="faq-box">
+                    <h5 class="faq-tittle">How to install sApp?</h5>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>
+                <div class="faq-box">
+                    <h5 class="faq-tittle">Can i get support from the Author?</h5>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="faq-box">
+                    <h5 class="faq-tittle">Do you have a free trail?</h5>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="faq-desine col-12 col-md-6">
+                <div class="faq-box">
+                    <h5 class="faq-tittle">How can I edit my personal information?</h5>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <div class="faq-box">
+                    <h5 class="faq-tittle">Contact form isn't working?</h5>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                </div>
+                <div class="faq-box">
+                    <h5 class="faq-tittle">Contact form isn't working?</h5>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-link">Haven't find suitable answer?<a href="#">Tell Us What You Need.</a></div>
+            </div>
+        </div>
+    </section>
     <!-- FAQ: end-->
 
     <!-- Our Team Experts section: start-->
@@ -245,17 +264,77 @@
                 <p class="main-para hidden visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
             </div>
         </div>
-        <div class="row teams">
-            <img class="team-img col-12 col-sm-6 col-md-4 col-lg-3" src="./img/avatar-1.webp" alt="a man with glasses">
-            <img class="team-img col-12 col-sm-6 col-md-4 col-lg-3" src="./img/avatar-2.webp" alt="a woman with dark hair">
-            <img class="team-img col-12 col-sm-6 col-md-4 col-lg-3" src="./img/avatar-3.webp" alt="a man in the gray shirt">
-            <img class="team-img col-12 col-sm-6 col-md-4 col-lg-3" src="./img/avatar-4.webp" alt="a woman in a gray sweater">
+        <div class="row">
+            <div class="team col-12">
+                <div class="content">
+                    <div class="bubble">
+                        <div class="main-view">
+                            <img class="team-img" src="./img/avatar-1.webp" alt="a man with glasses">
+                            <div class="hover-view">
+                                <p class="expert-name">Junaid Hasan</p>
+                                <p class="expert-position">Founder & CEO</p>
+                                <div class="bubble-socials">
+                                    <a href="#" class="icon fa fa-facebook"></a>
+                                    <a href="#" class="icon fa fa-twitter"></a>
+                                    <a href="#" class="icon fa fa-google-plus"></a>
+                                    <a href="#" class="icon fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble">
+                        <div class="main-view">
+                            <img class="team-img" src="./img/avatar-2.webp" alt="a woman with dark hair">
+                            <div class="hover-view">
+                                <p class="expert-name">Jassica William</p>
+                                <p class="expert-position">Co-Founder</p>
+                                <div class="bubble-socials">
+                                    <a href="#" class="icon fa fa-facebook"></a>
+                                    <a href="#" class="icon fa fa-twitter"></a>
+                                    <a href="#" class="icon fa fa-google-plus"></a>
+                                    <a href="#" class="icon fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble">
+                        <div class="main-view">
+                            <img class="team-img" src="./img/avatar-3.webp" alt="a man in the gray shirt">
+                            <div class="hover-view">
+                                <p class="expert-name">Md. Arham</p>
+                                <p class="expert-position">Web Designer</p>
+                                <div class="bubble-socials">
+                                    <a href="#" class="icon fa fa-facebook"></a>
+                                    <a href="#" class="icon fa fa-twitter"></a>
+                                    <a href="#" class="icon fa fa-google-plus"></a>
+                                    <a href="#" class="icon fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubble">
+                        <div class="main-view">
+                            <img class="team-img" src="./img/avatar-4.webp" alt="a woman in a gray sweater">
+                            <div class="hover-view">
+                                <p class="expert-name">Yasmin Akter</p>
+                                <p class="expert-position">Graphic Designer</p>
+                                <div class="bubble-socials">
+                                    <a href="#" class="icon fa fa-facebook"></a>
+                                    <a href="#" class="icon fa fa-twitter"></a>
+                                    <a href="#" class="icon fa fa-google-plus"></a>
+                                    <a href="#" class="icon fa fa-linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Our Team Experts section: end-->
 
     <!-- sApp is available for all devices - section: start-->
-    <div class="container">
+    <div class="container container-sApp">
         <div class="row">
             <div class="tittle col-12 col-md-10 ml-md-1">
                 <h2 class="section-tittle ">sApp is available for all devices</h2>
@@ -265,7 +344,7 @@
                     <a href="#"><img class="sApp-img" src="./img/google-play.webp" alt="Google-play"></a>
                     <a href="#"><img class="sApp-img" src="./img/app-store.webp" alt="App-store"></a>
                 </div>
-                <p class="main-para">* Available on iPhone, iPad and all Android devices</p>
+                <p class="main-para sApp-italic">* Available on iPhone, iPad and all Android devices</p>
             </div>
         </div>
     </div>
@@ -277,17 +356,17 @@
                 <div class="subscribe col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3">
                     <h2 class="section-tittle">Subscribe to get updates</h2>
                     <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
-                    <div class="form">
-                        <input type="text" placeholder="Enter your email">
+                    <form class="form">
+                        <input name="femail" type="text" placeholder="Enter your email">
                         <button type="submit" class="btn">Subscribe</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
     <!-- Subscribe to get updates - section: end-->
     
     <!-- Stay Tuned section: start-->
-    <section class="container">
+    <section class="container bg-gray">
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 tittle">
                 <div class="section-tittle">Stay Tuned</div>
@@ -312,19 +391,19 @@
                     <span>exampledomain@domain<wbr>.com</span>
                 </a>
             </div>
-            <div class="col-12 col-md-6 ml-md-1 form">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
+            <form class="col-12 col-md-6 ml-md-1 form">
+                <input type="text" placeholder="Name" name="fname">
+                <input type="text" placeholder="Email" name="femail">
+                <input type="text" placeholder="Subject" name="subject">
                 <textarea name="textarea" placeholder="Message"></textarea>
                 <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send Message</button>
-            </div>
+            </form>
         </div>
     </section>
     <!-- Stay Tuned section: end-->
 
     <!-- footer: start -->
-    <footer class="container">
+    <footer class="container small-padding">
         <div class="row">
             <div class="col-12 col-sm-6 col-lg-3">
                 <img class="footer-logo" src="./img/logo.webp" alt="logo">
@@ -375,6 +454,10 @@
                     <a class="app-btn" href="#"><img src="./img/img.webp" alt="App store"></a>
                 </div>
             </div>
+        </div>
+        <div class="row bottom-line">
+                <p>&copy; Copyrights 2020 sApp All rights reserved.</p>
+                <p>Made with <i class="fa fa-heart"></i> By Theme Land</p>
         </div>
     </footer>
     <!-- footer: end -->

@@ -48,12 +48,15 @@
     float: right !important;
 }
 
+.small-padding {
+    padding: 15px 0 !important;
+}
+
 .container,
 .container-fluid {
     width: 100%;
-    padding: 15px 0;
+    padding: 50px 0;
     float: left;
-    background-color: pink; /* delete at the end */
 }
 
 .container > .row {
@@ -72,7 +75,6 @@
 
 .row > [class*='col-'] {
     float: left;
-    background-color: aqua; /* delete at the end */
     margin: 0 var(--half-gap);
 }
 
@@ -251,6 +253,11 @@
         --width: 720px;
     }
 
+    .container,
+    .container-fluid {
+        padding: 70px 0;
+    }
+
     .hidden-md {
         display: none !important;
     }
@@ -345,6 +352,11 @@
 @media (min-width: 992px) {
     :root {
         --width: 960px;
+    }
+
+    .container,
+    .container-fluid {
+        padding: 100px 0;
     }
 
     .hidden-lg {

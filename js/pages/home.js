@@ -13,6 +13,7 @@ import deviceData from '../data/deviceData.js';
 import { device } from '../components/device.js';
 import fullPowerData from '../data/fullPowerData.js';
 import { renderFullPower } from '../components/renderFullPower.js';
+
 // EXECUTION
 
 /* header: start */
