@@ -11,6 +11,13 @@ import { validateForm } from '../components/validateForm.js';
 import { stickyHeaderScroll } from '../components/stickyHeaderScroll.js';
 import deviceData from '../data/deviceData.js';
 import { device } from '../components/device.js';
+import fullPowerData from '../data/fullPowerData.js';
+import { renderFullPower } from '../components/renderFullPower.js';
+import { Carousel } from '../components/Carousel.js';
+import { Interface } from '../components/Interface.js';
+import { Testimonials } from '../components/Testimonials.js';
+import { interfaceData } from '../data/interfaceData.js';
+import { testimonialsData } from '../data/testimonialsData.js';
 import { stayTuned } from '../components/stayTuned.js';
 import stayTunedData from '../data/stayTunedData.js';
 
@@ -73,9 +80,12 @@ renderHowAppWorks('info', howAppWorksData);
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
+new Carousel('#interface_block', Interface, interfaceData);
+new Carousel('#testimonials_block', Testimonials, testimonialsData);
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
+renderFullPower('plans-row', fullPowerData);
 /* Unlock Full Power Of sApp - section: end */
 
 /* FAQ: start */

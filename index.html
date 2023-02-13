@@ -23,7 +23,9 @@
     <header class="container small-padding">
         <div class="row">
             <div class="col-12 header-col">
-                <a class="logo-link" href="#"></a>
+                <a class="logo-link" href="#">
+                    <img src="./img/logo-white.webp" alt="logo" class="logo">
+                </a>
                 <nav class="nav-bar hidden visible-lg">
                     <a href="#">Home</a>
                     <a href="#">Features</a>
@@ -173,17 +175,11 @@
             </div>
         </div>
         <div class="row">
-            <img class="col-12 carousel-placeholder" src="./img/static_screeonshot.webp" alt="carousel">
+            <div id="interface_block" class="col-12">
+            </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 testimonial">
-                <img src="./img/avatar-1.webp" alt="John">
-                <div class="tst-info">
-                    <span class="tst-name">John Doe</span>
-                    <span class="tst-adress">Los Angeles, California</span>
-                    <span class="tst-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+            <div id="testimonials_block" class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 testimonial">
             </div>
         </div>
     </section>
@@ -199,39 +195,7 @@
                 </div>
             </div>
         </div>
-        <div class="row plans">
-            <div class="plan-box col-12 col-sm-10 ml-sm-1 col-md-5 ml-md-1 col-lg-4 ml-lg-2">
-                <div class="price">
-                    <img class="price-img" src="./img/price_basic.webp" alt="Basic price">
-                    <span class="price-name">Basic</span>
-                    <h1 class="
-                    price-value"><span class="currency">$</span>49</h1>
-                </div>
-                <ul class="plan-features">
-                    <li>5GB Linux Web Space</li>
-                    <li>5 MySQL Databases</li>
-                    <li>24/7 Tech Support</li>
-                    <li>Daily Backups</li>
-                </ul>
-                <a class="btn hidden-md" href="#">Sign up</a>
-                <a class="btn btn-out hidden visible-md" href="#">Sign up</a>
-            </div>
-            <div class="plan-box col-12 col-sm-10 ml-sm-1 col-md-5 ml-md-0 col-lg-4">
-                <div class="price">
-                    <img class="price-img" src="./img/price_premium.webp" alt="Basic price">
-                    <span class="price-name">Pro</span>
-                    <h1 class="
-                    price-value"><span class="currency">$</span>149</h1>
-                </div>
-                <ul class="plan-features">
-                    <li>10GB Linux Web Space</li>
-                    <li>50 MySQL Databases</li>
-                    <li>Unlimited Email</li>
-                    <li>Daily Backups</li>
-                </ul>
-                <a class="btn hidden-md" href="#">Sign up</a>
-                <a class="btn btn-out hidden visible-md" href="#">Sign up</a>
-            </div>
+        <div class="row plans" id="plans-row">
         </div>
         <div class="row full-power-bot">
             <div class="col-12 col-md-6 ml-md-3">
