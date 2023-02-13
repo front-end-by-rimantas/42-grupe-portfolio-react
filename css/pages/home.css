@@ -10,6 +10,7 @@
 @import '../components/icon-box.css';
 @import '../components/text-link.css';
 @import '../components/button.css';
+@import '../components/carousel.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -387,38 +388,12 @@ header.container.sticky-placeholder {
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
-/* placeholder start */
-.carousel-placeholder {
-    height: 480px;
-    background-color: red;
-    object-fit: cover;
-    object-position: center;
+
+.interface {
+    display: inline-block;
+    width: 100%;
 }
 
-@media (min-width:576px) {
-    .carousel-placeholder {
-        height: 300px;
-    }
-}
-
-@media (min-width:768px) {
-    .carousel-placeholder {
-        height: 400px;
-    }
-}
-
-@media (min-width:992px) {
-    .carousel-placeholder {
-        height: 550px;
-    }
-}
-
-@media (min-width:1200px) {
-    .carousel-placeholder {
-        height: 500px;
-    }
-}
-/* placeholder end */
 .testimonial {
     display: flex;
     flex-direction: column;
@@ -428,7 +403,7 @@ header.container.sticky-placeholder {
     padding: 3em;
 }
 
-.testimonial > img {
+.testimonial .item > img {
     height: 100px;
     width: 100px;
     object-fit: contain;
@@ -437,7 +412,7 @@ header.container.sticky-placeholder {
     border: 1px solid gray;
 }
 
-.testimonial > .tst-info {
+.testimonial .item > .tst-info {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -453,6 +428,20 @@ header.container.sticky-placeholder {
 .tst-rating {
     color: #ffa200;
     letter-spacing: 3px;
+}
+
+.testimonial .item > p {
+    width: 94%;
+    margin-left: 3%;
+}
+
+.auto-slider {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
 }
 /* Simple & Beautiful Interface - section: end */
 
