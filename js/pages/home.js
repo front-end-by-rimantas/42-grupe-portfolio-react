@@ -18,6 +18,8 @@ import { Interface } from '../components/Interface.js';
 import { Testimonials } from '../components/Testimonials.js';
 import { interfaceData } from '../data/interfaceData.js';
 import { testimonialsData } from '../data/testimonialsData.js';
+import { stayTuned } from '../components/stayTuned.js';
+import stayTunedData from '../data/stayTunedData.js';
 
 // EXECUTION
 
@@ -103,6 +105,7 @@ subFormDOM.addEventListener('submit', () => validateForm(subFormDOM));
 /* Stay Tuned section: start */
 const stayFormDOM = document.querySelectorAll('form.form')[2];
 stayFormDOM.addEventListener('submit', () => validateForm(stayFormDOM));
+stayTuned('stay', stayTunedData);
 /* Stay Tuned section: end */
 
 /* footer: start  */
