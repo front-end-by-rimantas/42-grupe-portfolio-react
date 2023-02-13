@@ -20,10 +20,12 @@
 
 <body>
     <!-- header: start -->
-    <header class="container">
+    <header class="container small-padding">
         <div class="row">
             <div class="col-12 header-col">
-                <a class="logo-link" href="#"></a>
+                <a class="logo-link" href="#">
+                    <img src="./img/logo-white.webp" alt="logo" class="logo">
+                </a>
                 <nav class="nav-bar hidden visible-lg">
                     <a href="#">Home</a>
                     <a href="#">Features</a>
@@ -47,10 +49,11 @@
             <a href="#">Contact</a>
         </nav>
     </section>
+    <header class="container sticky-placeholder hidden"></header>
     <!-- header: end -->
 
     <!-- Hero: start-->
-    <section class="container hero">
+    <section class="container hero small-padding">
         <div class="fixed-bg">
             <img src="./img/blog-4.webp" alt="hero background">
             <div></div>
@@ -58,7 +61,7 @@
         <div class="row tittle-form-row">
             <div class="col-12 col-lg-7">
                 <h1 class="main-tittle">Stay connected with your customers</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
+                <p class="main-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
                 <a class="trail-btn" href="#">Start free trail</a>
             </div>
             <form class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 form">
@@ -74,7 +77,7 @@
             </form>
         </div>
     </section>
-    <section class="container-fluid hero">
+    <section class="container-fluid hero small-padding">
         <div class="row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg>
         </div>
@@ -82,7 +85,7 @@
     <!-- Hero: end-->
 
     <!-- Express Functionality: start-->
-    <section class="container">
+    <section class="container bg-white">
         <div class="row">
             <div class="premium">
                 <span><i class="fa fa-lightbulb-o"></i> Premium</span>Features
@@ -100,13 +103,13 @@
     <!-- Express Functionality: end-->
 
     <!-- Clients section: start-->
-    <section class="container">
+    <section class="container bg-gray">
         <div class="row">
             <div class="col-12 col-lg-6 client-img hidden visible-lg">
                 <img src="./img/telefonas.webp" alt="Phone" class="phone-image">
             </div>
-            <div class="col-12 col-lg-6 client-text">
-                <h2 class="client-title">Easily communicate with clients using sApp.</h2>
+            <div class="tittle col-12 col-lg-6 client-text">
+                <h2 class="section-tittle">Easily communicate with clients using sApp.</h2>
                 <p class="client-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam, impedit asperiores vel cumque laborum dicta repellendus inventore voluptatibus et explicabo nobis unde.</p>
                 <p class="icon-row">Combined with a handful of model sentence structures looks reasonable.</p>
                 <p class="icon-row">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
@@ -136,30 +139,7 @@
                             Make Your Device Manage Everything For You
                         </h2>
                     </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        </div>
-                        <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                        </div>
-                        <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-fire" aria-hidden="true"></i>
-                        </div>
-                        <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
-                    <div class="pomidoras">
-                        <div class="icon-box">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </div>
-                        <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
-                    </div>
+                    <div  id="pomidoras"></div>
                     <div>
                         <a class="btn" href="#">Learn More</a>
                     </div>
@@ -195,17 +175,11 @@
             </div>
         </div>
         <div class="row">
-            <img class="col-12 carousel-placeholder" src="./img/static_screeonshot.webp" alt="carousel">
+            <div id="interface_block" class="col-12">
+            </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 testimonial">
-                <img src="./img/avatar-1.webp" alt="John">
-                <div class="tst-info">
-                    <span class="tst-name">John Doe</span>
-                    <span class="tst-adress">Los Angeles, California</span>
-                    <span class="tst-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+            <div id="testimonials_block" class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 testimonial">
             </div>
         </div>
     </section>
@@ -221,41 +195,9 @@
                 </div>
             </div>
         </div>
-        <div class="row plans">
-            <div class="plan-box col-12 col-sm-10 ml-sm-1 col-md-5 ml-md-1 col-lg-4 ml-lg-2">
-                <div class="price">
-                    <img class="price-img" src="./img/price_basic.webp" alt="Basic price">
-                    <span class="price-name">Basic</span>
-                    <h1 class="
-                    price-value"><span class="currency">$</span>49</h1>
-                </div>
-                <ul class="plan-features">
-                    <li>5GB Linux Web Space</li>
-                    <li>5 MySQL Databases</li>
-                    <li>24/7 Tech Support</li>
-                    <li>Daily Backups</li>
-                </ul>
-                <a class="btn hidden-md" href="#">Sign up</a>
-                <a class="btn btn-out hidden visible-md" href="#">Sign up</a>
-            </div>
-            <div class="plan-box col-12 col-sm-10 ml-sm-1 col-md-5 ml-md-0 col-lg-4">
-                <div class="price">
-                    <img class="price-img" src="./img/price_premium.webp" alt="Basic price">
-                    <span class="price-name">Pro</span>
-                    <h1 class="
-                    price-value"><span class="currency">$</span>149</h1>
-                </div>
-                <ul class="plan-features">
-                    <li>10GB Linux Web Space</li>
-                    <li>50 MySQL Databases</li>
-                    <li>Unlimited Email</li>
-                    <li>Daily Backups</li>
-                </ul>
-                <a class="btn hidden-md" href="#">Sign up</a>
-                <a class="btn btn-out hidden visible-md" href="#">Sign up</a>
-            </div>
+        <div class="row plans" id="plans-row">
         </div>
-        <div class="row">
+        <div class="row full-power-bot">
             <div class="col-12 col-md-6 ml-md-3">
                 <div class="text-link">Not sure what to choose? <a href="#">Contact Us</a></div>
             </div>
@@ -420,7 +362,7 @@
     <!-- Subscribe to get updates - section: end-->
     
     <!-- Stay Tuned section: start-->
-    <section class="container">
+    <section class="container bg-gray">
         <div class="row">
             <div class="col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3 tittle">
                 <div class="section-tittle">Stay Tuned</div>
@@ -431,19 +373,8 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-5 stay-tuned-left">
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                <a href="#">
-                    <div class="icon-box fa fa-home"></div>
-                    <span>Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</span>
-                </a>
-                <a href="#">
-                    <div class="icon-box fa fa-phone"></div>
-                    <span>+1 230 456 789-012 345 6789</span>
-                </a>
-                <a href="#">
-                    <div class="icon-box fa fa-envelope"></div>
-                    <span>exampledomain@domain<wbr>.com</span>
-                </a>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>  
+                <div id="stay" class="stay-tuned-left"></div>
             </div>
             <form class="col-12 col-md-6 ml-md-1 form">
                 <input type="text" placeholder="Name" name="fname">
@@ -457,7 +388,7 @@
     <!-- Stay Tuned section: end-->
 
     <!-- footer: start -->
-    <footer class="container">
+    <footer class="container small-padding">
         <div class="row">
             <div class="col-12 col-sm-6 col-lg-3">
                 <img class="footer-logo" src="./img/logo.webp" alt="logo">

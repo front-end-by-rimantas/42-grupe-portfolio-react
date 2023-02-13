@@ -10,6 +10,7 @@
 @import '../components/icon-box.css';
 @import '../components/text-link.css';
 @import '../components/button.css';
+@import '../components/carousel.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -25,8 +26,11 @@ header .row {
 .logo {
     float: left;
 }
-.header-col .fa-bars {
+.header-col {
     color: #fff;
+}
+.header-col .fa-bars {
+    color: inherit;
     font-size: 35px;
     line-height: 1em;
     padding: 0.25em;
@@ -46,6 +50,9 @@ header .row {
 }
 .nav-bar > a:first-child{
     margin-left: 0;
+}
+.nav-bar > a:hover {
+    color: #b7aad4;
 }
 /* delete after container fix? start */
 header.container {
@@ -94,6 +101,9 @@ header.container {
 .burger-nav-bar > a:hover {
     color: #000;
 }
+header.container.sticky-placeholder {
+    height: 82px;
+}
 /* header: end */
 
 /* Hero: start */
@@ -137,6 +147,12 @@ header.container {
     background: transparent;
 }
 /*del cont fix end */
+.tittle-form-row .main-para {
+    text-align: left;
+    color: #fff;
+    line-height: 1.5em;
+}
+
 .trail-btn { 
     padding: 0.8em  1.8em;
     text-align: center;
@@ -168,6 +184,12 @@ header.container {
     align-items: center;
     padding: 3em;
     box-shadow: 0 1em 3em rgba(0,0,0,.2);
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.hero  .form .text-link {
+    font-size: 13px;
 }
 
 .hero.container-fluid {
@@ -266,11 +288,6 @@ header.container {
     flex-direction: column;
     gap: 1em;
 }
-
-.client-title {
-    font-size:40px;
-}
-
 .icon-row::before {
     content: "✔";
     margin-right: 10px;
@@ -339,6 +356,24 @@ header.container {
     margin-top: 40px;
 }
 
+@media (min-width: 992px) {
+    .app-container .info::after {
+        content: '>';
+        color: #fff;
+        font-size: 60px;
+        font-weight: 500;
+        position: absolute;
+        transform: translate(390%, -220%);
+        transition: 0.2s;
+    }
+    .app-container .info:hover::after {
+        transform: translate(410%, -220%);
+    }
+    .app-container .info:last-child:after {
+        display: none;
+    }
+}
+
 .app-img {
     width: 65px;
     margin-bottom: 10px;
@@ -368,41 +403,17 @@ header.container {
         font-size: 22px;
     }
 }
+
+
 /* How sApp works?: end */
 
 /* Simple & Beautiful Interface - section: start */
-/* placeholder start */
-.carousel-placeholder {
-    height: 480px;
-    background-color: red;
-    object-fit: cover;
-    object-position: center;
+
+.interface {
+    display: inline-block;
+    width: 100%;
 }
 
-@media (min-width:576px) {
-    .carousel-placeholder {
-        height: 300px;
-    }
-}
-
-@media (min-width:768px) {
-    .carousel-placeholder {
-        height: 400px;
-    }
-}
-
-@media (min-width:992px) {
-    .carousel-placeholder {
-        height: 550px;
-    }
-}
-
-@media (min-width:1200px) {
-    .carousel-placeholder {
-        height: 500px;
-    }
-}
-/* placeholder end */
 .testimonial {
     display: flex;
     flex-direction: column;
@@ -412,7 +423,7 @@ header.container {
     padding: 3em;
 }
 
-.testimonial > img {
+.testimonial .item > img {
     height: 100px;
     width: 100px;
     object-fit: contain;
@@ -421,7 +432,7 @@ header.container {
     border: 1px solid gray;
 }
 
-.testimonial > .tst-info {
+.testimonial .item > .tst-info {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -438,13 +449,23 @@ header.container {
     color: #ffa200;
     letter-spacing: 3px;
 }
+
+.testimonial .item > p {
+    width: 94%;
+    margin-left: 3%;
+}
+
+.auto-slider {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
 /* Simple & Beautiful Interface - section: end */
 
 /* Unlock Full Power Of sApp - section: start */
-.bg-gray {
-    background-color: #f6f9fe;
-}
-
 .row.plans {
     display: flex;
     flex-wrap: wrap;
@@ -512,6 +533,10 @@ header.container {
     position: absolute;
     bottom: 0;
     transform: translateY(50%);
+}
+
+.container > .row.full-power-bot {
+    padding-top: 60px;
 }
 /* Unlock Full Power Of sApp - section: end */
 
@@ -668,8 +693,10 @@ header.container {
 }
 .container-sApp .section-tittle, 
 .container-sApp .main-para {
-
     color: #fff;
+}
+.container-sApp > .row .section-tittle::after {
+    display: none;
 }
 .sApp-italic {
     font-style: italic;
@@ -707,7 +734,9 @@ header.container {
 .container > .row > .subscribe > .section-tittle{
     text-align: center;
 }
-
+.container > .row > .subscribe > .section-tittle::after {
+    display: none;
+}
 .container > .row > .subscribe > p{
     text-align: center;
     line-height: 20px;
